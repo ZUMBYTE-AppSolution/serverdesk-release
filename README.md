@@ -1,26 +1,52 @@
+<p align="center"><img src="https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/app-icon.png" width="112" height="112" alt="Zumbyte - ServerDesk App-Icon"></p>
 <h1 align="center">Zumbyte - ServerDesk</h1>
 <p align="center">Dateien. Server. Verbindungen. Ein gemeinsamer Arbeitsbereich.</p>
 <p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases">Windows-Installer & portable Ausgabe</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki">Dokumentation</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/issues">Fehler melden</a></p>
-<p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Beta-Version"></p>
+<p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk-release?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Beta-Version"></p>
 
 ServerDesk verbindet einen Explorer mit zwei Dateibereichen, einen Zugangstresor, einen Codeeditor und eingebettete Remotesitzungen. Die native Oberfläche folgt dem ursprünglichen Zumbyte-Mockup: kompakte Tabs und Pfadleisten, farbige Favoriten sowie Dark und Light Mode.
 
 Die Quellcode-Entwicklung erfolgt privat; Downloads erscheinen im öffentlichen Release-Repository. Dies ist eine Windows-x64-Beta. Die gemeinsame Avalonia-Codebasis und das portable Tresorformat bereiten macOS vor; ein geprüftes macOS-Paket und eine macOS-RDP-Integration sind noch offen.
 
+## 🖼️ Einblicke in ServerDesk
+
+Zwei Dateibereiche, deine Server und laufende Transfers in einer kompakten Oberfläche.
+
+![ServerDesk im Dark Mode: lokaler Explorer, verbundener SFTP-Server und Transfers](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/explorer-dark.png)
+
+| Light Mode | Editor mit Syntaxfarben |
+| --- | --- |
+| ![Explorer im Light Mode](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/explorer-light.png) | ![Tabbed Codeeditor](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/editor-dark.png) |
+
+| Server & Computer | Zugangstresor |
+| --- | --- |
+| ![Serververwaltung mit leuchtenden Verbindungsindikatoren](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/connections-dark.png) | ![Verschlüsselter Zugangstresor mit verdeckten Passwörtern](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/vault-dark.png) |
+
+| Integriertes Terminal | Auto-Lock mit App-PIN |
+| --- | --- |
+| ![Interaktives PowerShell-Terminal in ServerDesk](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/terminal-dark.png) | ![Weichgezeichnete App mit automatischer PIN-Entsperrung](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/auto-lock-dark.png) |
+
+Die Bilder zeigen die echte native Windows-Beta mit Beispieldaten. Grüne Statuslampen und SFTP-Transfers stammen aus einer lokalen SSH-/SFTP-Testumgebung. Klicke auf ein Bild für die volle Auflösung.
+
 ## ✨ Funktionen
 
 - **Zwei Dateibereiche:** mehrere Tabs pro Seite, Adress-Breadcrumbs, Verzeichnissuche, Sortierung und verschiebbare, ein- und ausblendbare Spalten.
 - **Arbeitsbereiche:** eigene Verbindungen, Zugangsdaten und unabhängige Masterkeys; getrennte Tabs, Pfade und Fensterpositionen. Passwortabfrage beim Start und Wechsel, optional auf diesem Gerät speichern.
-- **Freie Tabs:** Explorer-, Editor-, SSH-, RDP- und VNC-Tabs lassen sich als Desktopfenster abkoppeln und wieder andocken. Der vorhandene Inhalt bleibt erhalten. Der Hinweis dazu steht in der Statusleiste.
+- **Weitere App-Fenster:** über das Fenstersymbol eine vollständige zweite Ansicht mit eigenen Tabs und Verbindungen öffnen. Dateien per Drag-and-drop oder Strg+C/X/V auch zwischen Fenstern und Servern übertragen.
+- **Auto-Lock:** App-PIN zweimal festlegen, Inaktivitätszeit von 1 bis 60 Minuten wählen. Alle Fenster sperren, Verbindungen trennen und nach korrekter PIN automatisch wiederherstellen. Bei aktivem Auto-Lock ist beim Neustart trotz gespeicherter Gerätefreigabe das Masterpasswort erforderlich. Sensible Aktionen verlangen eine zehn Minuten gültige manuelle Freigabe.
+- **Freie Tabs:** Explorer-, SSH-, RDP- und VNC-Tabs lassen sich als Desktopfenster abkoppeln und wieder andocken. Der vorhandene Inhalt bleibt erhalten. Der Hinweis dazu steht in der Statusleiste.
+- **Fenster & Sitzungen:** Größe, Position und maximierten Zustand speichern. Beim Beenden aktive Verbindungen für den nächsten Start vormerken; „Nicht mehr fragen“ und spätere Änderung in den Einstellungen.
+- **Sprache & Uhr:** Deutsch/English direkt umschalten, unabhängiges Gebietsschema und Uhrzeit mit Datum oben rechts.
 - **Dateiaktionen:** Kopieren, Ausschneiden, Einfügen und Umbenennen per Tastatur und Kontextmenü; Löschen mit Rückfrage, unter Windows lokal standardmäßig in den Papierkorb.
 - **Server & Computer:** Profile für SFTP, SSH, FTP, FTPS, SMB, HTTPS-WebDAV, RDP und VNC; optional einzeln beim Start öffnen.
-- **Verbindungsstatus:** Aufklappbare Hostgruppen in der Seitenleiste, Protokolle darunter. Statuspunkte rechtsbündig und mittig in den Listen und Sitzungsleisten; Tabköpfe bleiben ohne Punkt. Explorer zeigt nach erfolgreicher Verbindung eine Aktion zum Trennen.
-- **Terminal & Transfers:** untere Tabs für eine interaktive lokale PowerShell, die Transferliste mit Bytefortschritt und Geschwindigkeit sowie die Aktivität. SSH öffnet eine dauerhafte PTY-Shell mit ANSI-Farben im eigenen Verbindungstab. Terminal-Schriftgröße, Zwischenablage per Strg+C/V und Kontextmenü sind einstellbar. Schließen des SSH-Tabs trennt diese Sitzung; eine separate SFTP-Verbindung bleibt erhalten.
+- **Sidebar-Kontextmenüs:** einzelne Verbindungen oder ganze Hostgruppen verbinden und trennen, Profile bearbeiten, löschen und farbige Verbindungsfavoriten pflegen.
+- **Verbindungsstatus:** Aufklappbare Hostgruppen in der Seitenleiste, Protokolle darunter. Statuslampen mit dezentem Glow rechtsbündig und mittig in den Listen und Sitzungsleisten; Tabköpfe bleiben ohne Punkt. Explorer zeigt nach erfolgreicher Verbindung eine Aktion zum Trennen.
+- **Terminal & Transfers:** vergrößerbarer unterer Bereich, als Ganzes oder einzelne Tabs herauslösbar; Fensterzustände bleiben gespeichert. Kompakte Aktivitätszeilen und Zahlen-Dropdown für Terminal-Schriftgrößen. Untere Tabs für eine interaktive lokale PowerShell, die Transferliste mit Bytefortschritt und Geschwindigkeit sowie die Aktivität. SSH öffnet eine dauerhafte PTY-Shell mit ANSI-Farben im eigenen Verbindungstab. Terminal-Schriftgröße, Zwischenablage per Strg+C/V und Kontextmenü sind einstellbar. Schließen des SSH-Tabs trennt diese Sitzung; eine separate SFTP-Verbindung bleibt erhalten.
 - **Remote Desktop:** RDP unter Windows über Microsofts natives Steuerelement; VNC mit Bildschirm, Maus und Tastatur direkt im Tab. Die Übersicht zeigt RDP/VNC; SSH bleibt unter Server & Computer.
 - **LAN-/WLAN-Suche:** Beim Anlegen eines Profils Adapter und lokalen IPv4-Bereich wählen. RDP-/VNC-Dienste anhand ihrer Protokollantwort erkennen und Host, Typ und Port vorfüllen; vorhandene Profile werden gekennzeichnet. Fortschritt und Abbrechen, ohne Anmeldung während der Suche.
 - **Zugangstresor:** Private Schlüssel über **Durchsuchen…** auswählen. Jeder Arbeitsbereich besitzt eine passwortgeschützte `.zmasterkey`-Datei und einen eigenen verschlüsselten `.zstorage`-Speicher für Zugänge und Verbindungen. Import, Export, frei wählbarer Speicherort und laufende Änderungsüberwachung für synchronisierte Cloudordner.
 - **Netzwerk & Cloud:** Cloudspeicher erscheinen ausschließlich unter **Speicher**. WebDAV/Nextcloud und SMB werden automatisch zugeordnet; SFTP-/FTP-/FTPS-Speicher lassen sich im Profil einordnen. Lokale Sync-Ordner einschließlich iCloud Drive bleiben erreichbar.
-- **Codeeditor:** eigene Tabs, einstellbare Schriftgröße, Syntaxfarben, Zeilennummern, Suchen/Ersetzen, Syntaxprüfung und wahlweise externer Editor. Serverdateien können beim Speichern automatisch zurückgeladen werden; Konflikte stoppen den Upload.
+- **Codeeditor:** immer im eigenen Fenster mit mehreren Dateitabs, Schriftart- und Größen-Dropdown, Speichern unter, Sitzungen und Dateiüberwachung. Code-Faltung, Regex-/Wortsuche, Encoding und Zeilenenden, Dateivergleich sowie Suchen in Dateien; keine Makros. Syntaxfarben, Zeilennummern, Syntaxprüfung und wahlweise externer Editor. Serverdateien können beim Speichern automatisch zurückgeladen werden; Konflikte stoppen den Upload.
 - **Archive:** ZIP, TAR, TAR.GZ und GZ erstellen; ZIP, TAR, TAR.GZ/TGZ und GZ lokal aus dem Kontextmenü entpacken.
 - **SFTP-Rechte:** rwx, Oktalwerte, Sonderbits, Owner und Gruppe; Servernamen oder numerische UID/GID, optional rekursiv mit Vorschau und Bestätigung.
 - **Updates:** Release/Beta-Auswahl, GitHub-Versionsprüfung, Changelog, Installation mit Neustart und gezielte Rückkehr zu verfügbaren älteren Paketen.
@@ -57,9 +83,11 @@ Installer und Binärdateien sind derzeit **nicht mit einem Herausgeberzertifikat
 
 ## 🔄 Updates & Rollback
 
+**Neue Download- und Updatequelle:** [serverdesk-release](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases). Bereits installierte Beta 6 und ältere Versionen benötigen einmalig den neuen Installer aus diesem Repository. Ihre bisherige Updatequelle ist inzwischen privat. Ab Beta 7 laufen Versionsprüfung, Changelog, Downloads und Kanalwechsel über das öffentliche Release-Repository.
+
 Unter **Updates & Versionen** zwischen **Release** und **Beta** wählen. Release enthält stabile Veröffentlichungen; Beta enthält Vorabversionen. Ein leerer Kanal wechselt nicht automatisch zum anderen Kanal.
 
-Vor der Installation zeigt ServerDesk Version und Changelog. Das Paket muss zum offiziellen Repository, Tag, Kanal, App-Namen und zur SHA256-Prüfsumme des Releasefeeds passen. Beim Neustart werden ungespeicherte Editorinhalte abgefragt, die Konfiguration gesichert und Remotesitzungen getrennt. Ein Rollback ändert die Anwendungsversion; persönliche Dateien und Tresore werden nicht auf einen früheren Stand zurückgesetzt. Nach der Masterkey-Migration ist ein integrierter Rückwechsel auf Versionen vor Beta 6 gesperrt, da diese das neue Arbeitsbereichsformat nicht unterstützen.
+Vor der Installation zeigt ServerDesk Version und Changelog. Das Paket muss zum offiziellen Repository, Tag, Kanal, App-Namen und zur SHA256-Prüfsumme des Releasefeeds passen. Beim Neustart werden ungespeicherte Editorinhalte abgefragt, die Konfiguration gesichert und Remotesitzungen getrennt. Ein Rollback ändert die Anwendungsversion; persönliche Dateien und Tresore werden nicht auf einen früheren Stand zurückgesetzt. Beta 7 erweitert das verschlüsselte Speicherformat um die Sicherheitsrichtlinie. Danach ist ein integrierter Rückwechsel auf Versionen vor Beta 7 gesperrt, damit ältere Versionen den Auto-Lock-Schutz nicht verlieren.
 
 ## 🔐 Daten & Grenzen der Beta
 
@@ -75,7 +103,7 @@ Das Terminal verwendet eine verwaltete VT-Emulation; die Kompatibilität komplex
 
 ServerDesk ist proprietäre Software. Der Quellcode wird privat verwaltet. Ohne ausdrückliche schriftliche Erlaubnis von Zumbyte - AppSolution sind Nutzung, Vervielfältigung, Weitergabe, kommerzielle Verwertung und die Erstellung abgeleiteter Tools aus dem Quellcode untersagt. Das gilt auch für angepasste Fassungen und geschützte Codeschnipsel. Drittanbieterrechte und zwingende gesetzliche sowie GitHub-Plattformrechte bleiben unberührt. Einzelheiten: [LICENSE](LICENSE).
 
-Releases werden ausschließlich lokal erstellt und geprüft. Das öffentliche Repository enthält nur README, Lizenz, fertige Releasepakete und das Benutzer-Wiki. Es enthält keine Bauanleitungen, Quelltexte oder GitHub-Buildworkflows.
+Releases werden ausschließlich lokal erstellt und geprüft. Das öffentliche Repository enthält README, Lizenz, Dokumentationsbilder, fertige Releasepakete und das Benutzer-Wiki. Es enthält keine Bauanleitungen, Quelltexte oder GitHub-Buildworkflows.
 
 ## 💬 Support & Rechtliches
 
