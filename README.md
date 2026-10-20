@@ -4,7 +4,7 @@
 <p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases">Windows-Installer & portable Ausgabe</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki">Dokumentation</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/issues">Fehler melden</a></p>
 <p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk-release?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Beta-Version"></p>
 
-ServerDesk verbindet einen Explorer mit zwei Dateibereichen, einen Zugangstresor, einen Codeeditor und eingebettete Remotesitzungen. Die native Oberfläche folgt dem ursprünglichen Zumbyte-Mockup: kompakte Tabs und Pfadleisten, farbige Favoriten sowie Dark und Light Mode.
+ServerDesk verbindet einen Explorer mit zwei Dateibereichen, einen Zugangstresor, einen Codeeditor und eingebettete Remotesitzungen. Die native Oberfläche folgt dem ursprünglichen Zumbyte-Mockup: kompakte Tabs und Pfadleisten, farbige Favoriten sowie Dark und Light Mode. Sidebar-Kategorien lassen sich einklappen; Standardfavoriten dauerhaft entfernen und Ordner/Verknüpfungen vom PC oder aus der App auf Favoriten ziehen.
 
 Die Quellcode-Entwicklung erfolgt privat; Downloads erscheinen im öffentlichen Release-Repository. Dies ist eine Windows-x64-Beta. Die gemeinsame Avalonia-Codebasis und das portable Tresorformat bereiten macOS vor; ein geprüftes macOS-Paket und eine macOS-RDP-Integration sind noch offen.
 
@@ -26,6 +26,10 @@ Zwei Dateibereiche, deine Server und laufende Transfers in einer kompakten Oberf
 | --- | --- |
 | ![Interaktives PowerShell-Terminal in ServerDesk](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/terminal-dark.png) | ![Weichgezeichnete App mit automatischer PIN-Entsperrung](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/auto-lock-dark.png) |
 
+| Cloudkonten & Browser-Anmeldung | Lizenzen direkt in der App |
+| --- | --- |
+| ![Cloudanbieter mit ihren Anmeldeverfahren](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/cloud-dark.png) | ![Suchbare Komponenten und Original-Lizenztexte](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/licenses-dark.png) |
+
 Die Bilder zeigen die echte native Windows-Beta mit Beispieldaten. Grüne Statuslampen und SFTP-Transfers stammen aus einer lokalen SSH-/SFTP-Testumgebung. Klicke auf ein Bild für die volle Auflösung.
 
 ## ✨ Funktionen
@@ -45,7 +49,7 @@ Die Bilder zeigen die echte native Windows-Beta mit Beispieldaten. Grüne Status
 - **Remote Desktop:** RDP unter Windows über Microsofts natives Steuerelement; VNC mit Bildschirm, Maus und Tastatur direkt im Tab. Die Übersicht zeigt RDP/VNC; SSH bleibt unter Server & Computer.
 - **LAN-/WLAN-Suche:** Beim Anlegen eines Profils Adapter und lokalen IPv4-Bereich wählen. RDP-/VNC-Dienste anhand ihrer Protokollantwort erkennen und Host, Typ und Port vorfüllen; vorhandene Profile werden gekennzeichnet. Fortschritt und Abbrechen, ohne Anmeldung während der Suche.
 - **Zugangstresor:** Private Schlüssel über **Durchsuchen…** auswählen. Jeder Arbeitsbereich besitzt eine passwortgeschützte `.zmasterkey`-Datei und einen eigenen verschlüsselten `.zstorage`-Speicher für Zugänge und Verbindungen. Import, Export, frei wählbarer Speicherort und laufende Änderungsüberwachung für synchronisierte Cloudordner.
-- **Netzwerk & Cloud:** Cloudspeicher erscheinen ausschließlich unter **Speicher**. WebDAV/Nextcloud und SMB werden automatisch zugeordnet; SFTP-/FTP-/FTPS-Speicher lassen sich im Profil einordnen. Lokale Sync-Ordner einschließlich iCloud Drive bleiben erreichbar.
+- **Netzwerk & Cloud:** Cloudspeicher erscheinen ausschließlich unter **Speicher**. WebDAV/Nextcloud und SMB werden automatisch zugeordnet; SFTP-/FTP-/FTPS-Speicher lassen sich im Profil einordnen. OneDrive, Google Drive und Dropbox per Browser-OAuth/2FA; iCloud direkt mit Apple Account/Passwort/2FA; Nextcloud per Browser-Login V2. Anbieterfreigaben nennen zunächst rclone. Lokale Sync-Ordner bleiben erreichbar.
 - **Codeeditor:** immer im eigenen Fenster mit mehreren Dateitabs, Schriftart- und Größen-Dropdown, Speichern unter, Sitzungen und Dateiüberwachung. Code-Faltung, Regex-/Wortsuche, Encoding und Zeilenenden, Dateivergleich sowie Suchen in Dateien; keine Makros. Syntaxfarben, Zeilennummern, Syntaxprüfung und wahlweise externer Editor. Serverdateien können beim Speichern automatisch zurückgeladen werden; Konflikte stoppen den Upload.
 - **Archive:** ZIP, TAR, TAR.GZ und GZ erstellen; ZIP, TAR, TAR.GZ/TGZ und GZ lokal aus dem Kontextmenü entpacken.
 - **SFTP-Rechte:** rwx, Oktalwerte, Sonderbits, Owner und Gruppe; Servernamen oder numerische UID/GID, optional rekursiv mit Vorschau und Bestätigung.
@@ -89,6 +93,8 @@ Unter **Updates & Versionen** zwischen **Release** und **Beta** wählen. Release
 
 Vor der Installation zeigt ServerDesk Version und Changelog. Das Paket muss zum offiziellen Repository, Tag, Kanal, App-Namen und zur SHA256-Prüfsumme des Releasefeeds passen. Beim Neustart werden ungespeicherte Editorinhalte abgefragt, die Konfiguration gesichert und Remotesitzungen getrennt. Ein Rollback ändert die Anwendungsversion; persönliche Dateien und Tresore werden nicht auf einen früheren Stand zurückgesetzt. Beta 7 erweitert das verschlüsselte Speicherformat um die Sicherheitsrichtlinie. Danach ist ein integrierter Rückwechsel auf Versionen vor Beta 7 gesperrt, damit ältere Versionen den Auto-Lock-Schutz nicht verlieren.
 
+Direkte Cloudkonten des aktuellen Arbeitsbereichs benötigen mindestens Beta 8; der integrierte Updater verhindert dafür einen Rückwechsel auf ältere Versionen.
+
 ## 🔐 Daten & Grenzen der Beta
 
 Die lokale Konfiguration liegt unter `%LOCALAPPDATA%\Zumbyte\ServerDesk`. Ab Beta 6 sind Verbindungsprofile und Zugangsdaten gemeinsam pro Arbeitsbereich verschlüsselt. Ein zufälliger, unabhängiger 256-Bit-Schlüssel verschlüsselt den Speicher mit AES-256-GCM. Das Masterpasswort schützt diesen Schlüssel mittels PBKDF2-SHA256 mit 600.000 Iterationen und AES-256-GCM. **Passwort auf diesem Gerät speichern** ist standardmäßig aus und hinterlegt unter Windows eine DPAPI-geschützte Gerätefreigabe für das aktuelle Benutzerkonto. Das Passwort selbst wird nicht gespeichert; die Gerätefreigabe gehört nicht in den Cloudordner.
@@ -97,7 +103,7 @@ Bei der einmaligen Migration bleiben Profilkennungen erhalten. Die bisherigen ge
 
 Für mehrere Systeme dasselbe Dateipaar in einen synchronisierten Ordner legen und auf jedem System importieren. Die App überwacht Änderungen per Dateiwächter und regelmäßiger Prüfung. Aktuelle Daten werden im sicheren Leerlauf geladen; offene Dialoge, Bearbeitungen und Transfers führen zu einem Hinweis. Veraltete Schreibversuche werden blockiert. `.bak` und `.history` enthalten verschlüsselte Sicherungen. Cloudanbieter können parallele Änderungen als Konfliktkopien speichern: Diese müssen getrennt geprüft werden; eine automatische Zusammenführung oder atomare Transaktion zwischen Rechnern wird nicht garantiert. Das Dateiformat ist plattformunabhängig; ein vollständiger Windows/macOS-Synctest und ein Mac-Paket stehen noch aus.
 
-Das Terminal verwendet eine verwaltete VT-Emulation; die Kompatibilität komplexer Vollbildprogramme hängt von deren Anforderungen ab. Transfers lassen sich noch nicht pausieren oder wiederaufnehmen. Archive werden lokal verarbeitet. Direkte OAuth-Cloudanbieter und S3 sind noch nicht integriert. Syntaxfarben decken mehr Sprachen ab als die verfügbaren Syntaxparser. Details und weitere Grenzen stehen im [Wiki](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
+Das Terminal verwendet eine verwaltete VT-Emulation; die Kompatibilität komplexer Vollbildprogramme hängt von deren Anforderungen ab. Transfers lassen sich noch nicht pausieren oder wiederaufnehmen. Archive werden lokal verarbeitet. Echte externe Cloudkonto-Anmeldungen sind noch nicht praktisch geprüft; lokale Datei-Roundtrips über den tatsächlichen Cloud-Kern und Nextcloud-Protokollantworten wurden geprüft. S3 ist noch nicht integriert. Syntaxfarben decken mehr Sprachen ab als die verfügbaren Syntaxparser. Details und weitere Grenzen stehen im [Wiki](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
 
 ## 🔐 Lizenz und Quellcode
 
@@ -112,7 +118,7 @@ Releases werden ausschließlich lokal erstellt und geprüft. Das öffentliche Re
 
 [Support](https://www.zumbyte.de/support/) · [Datenschutz](https://www.zumbyte.de/datenschutz/) · [Impressum](https://www.zumbyte.de/impressum/) · [GitHub Issues](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/issues)
 
-Das App-Icon wurde von Zumbyte geliefert. Die übrigen Symbole stammen aus [Iconify](https://iconify.design/) / Microsoft Fluent UI System Icons (MIT). Die Lizenzen und Herkunftsnachweise aller mitgelieferten Drittkomponenten stehen im Paket unter `licenses`, einschließlich des angepassten VNC-Adapters.
+Das App-Icon wurde von Zumbyte geliefert. Die übrigen Symbole stammen aus [Iconify](https://iconify.design/) / Microsoft Fluent UI System Icons (MIT). Unter **Über ServerDesk → Lizenzen ansehen** sind 161 Komponenten mit Suche, Kategorien, Versionen, Projektlinks und kopierbaren Originaltexten einsehbar. Die mitgelieferten Drittkomponenten erlauben kommerzielle Einbindung unter ihren jeweiligen Bedingungen; Lizenz-, Copyright-, NOTICE- und Schriftbedingungen bleiben erhalten. Die Nachweise einschließlich des angepassten VNC-Adapters werden weiterhin mitgeliefert. [Lizenzansicht und Bedingungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Lizenzen).
 
 ---
 <p align="center">Zumbyte - ServerDesk · Entwickelt von Zumbyte - AppSolution</p>
