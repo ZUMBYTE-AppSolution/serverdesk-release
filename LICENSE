@@ -1,0 +1,66 @@
+ZUMBYTE - SERVERDESK
+PROPRIETARY SOURCE CODE AND DISTRIBUTION LICENSE
+Version 1.0 - 20 October 2026
+
+Copyright (c) 2026 Zumbyte - AppSolution | https://www.zumbyte.de/
+All rights reserved. Alle Rechte vorbehalten.
+
+1. Scope and ownership
+This license applies to the original Zumbyte - ServerDesk source code,
+architecture, original documentation, original artwork and other original
+materials owned by Zumbyte - AppSolution (the Rights Holder). It is not an
+open-source license. No rights are granted by implication, publication,
+access to a repository or availability of executable release packages.
+
+2. No source use, copying or derivative works
+Without prior express written permission from the Rights Holder, no person
+or entity may use, copy, duplicate, reproduce, extract, publish, distribute,
+sublicense, sell, commercially exploit, modify, translate, compile or build
+the covered source code, or use it to create software, tools, services or
+other derivative works. These restrictions apply to the whole and to every
+copyright-protected part, including individual code snippets, whether
+unchanged, adapted, renamed, rearranged, ported, rewritten from the covered
+code or combined with other material. Giving credit does not grant rights.
+No permission to train or provide code to third-party code generation
+services is granted.
+
+3. Limited inspection
+The source code is private. If the Rights Holder separately grants access
+for transparency or inspection, that access permits only the inspection
+expressly authorized. It does not grant permission to reuse code, compile
+it, publish copies or create modified applications. The Rights Holder and
+its expressly authorized contractors and services may act on its behalf
+within the scope of their authorization, including local release work.
+
+4. Official executable releases
+Publishing official executable releases does not grant any right to their
+underlying source code. Use of an official application is governed by any
+separate applicable end-user terms. No permission to republish, rebrand,
+commercially redistribute or create derivative products is granted here.
+
+5. Third-party material and mandatory rights
+Identified third-party components, fonts, icons and adapted third-party
+sources remain subject to their own licenses and notices. This license
+does not restrict rights already granted by those third-party licenses.
+The notices supplied with the application must be retained. Rights that
+cannot lawfully be excluded, and rights necessarily granted to GitHub or
+users by the applicable GitHub platform terms for content actually made
+available on GitHub, remain unaffected. No broader source-use permission
+is granted by this exception.
+
+6. No warranties beyond applicable law
+To the extent permitted by applicable law, covered materials are provided
+as available, without additional warranties. Nothing in this license limits
+liability or statutory rights where such limitation is not permitted.
+
+7. Permission and contact
+Any exception requires prior express written authorization from the Rights
+Holder. Contact: Zumbyte - AppSolution | https://www.zumbyte.de/support/
+
+Deutscher Hinweis: Der Quellcode ist proprietaer und nicht oeffentlich.
+Ohne vorherige ausdrueckliche schriftliche Erlaubnis sind insbesondere
+Nutzung, Vervielfaeltigung, Weitergabe, kommerzielle Nutzung, Bearbeitung,
+Kompilierung und die Erstellung abgeleiteter Tools untersagt. Dies gilt
+auch fuer geschuetzte Codeschnipsel und angepasste Fassungen. Die oben
+benannten Drittanbieter-, Plattform- und zwingenden gesetzlichen Rechte
+bleiben unberuehrt. Massgeblich sind die vorstehenden Lizenzbedingungen.
