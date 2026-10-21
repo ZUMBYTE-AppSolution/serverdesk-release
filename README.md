@@ -10,9 +10,9 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.12/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.12/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.12/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.15/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.15/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.15/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -45,7 +45,19 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-### Neu in Beta 12
+### Neu in Beta 15
+
+- Gemeinsame Cloud-Arbeitsbereiche übernehmen neue, geänderte und entfernte Verbindungen automatisch. Offene Editorinhalte und unveränderte Sitzungen bleiben erhalten.
+
+- Passwort eingeben oder Tresorzugang auswählen; Zugang auf Wunsch verschlüsselt speichern. Verbesserte SSH-/SFTP-Anmeldung einschließlich Keyboard Interactive und SSH-Schlüsseln.
+- RDP und VNC mit passender Bildgröße, Zoom, Auflösungswahl, Vollbild und erweiterten Anzeigeoptionen.
+- Eigene Verbindungsnamen bleiben in der Seitenleiste sichtbar.
+
+- Arbeitsbereiche in den Einstellungen löschen – auch den Standard-Arbeitsbereich und den letzten verbleibenden.
+- Passwortgeschütztes Entfernen aus allen App-Fenstern; offene Bearbeitungen und laufende Transfers werden berücksichtigt.
+- Ohne Arbeitsbereiche direkt einen neuen erstellen oder ein verschlüsseltes Masterkey-/Speicherpaar importieren.
+
+### Seit Beta 12
 
 - Mac-App, eigenständiger Editor und enthaltene native Komponenten mit Developer-ID-Signatur.
 - Mac-Installer für Apple Silicon und Intel von Apple notarisiert, mit beigefügtem Prüfticket.
