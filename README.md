@@ -10,11 +10,11 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.11/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.11/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.11/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.12/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.12/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.12/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
-Die Mac-Beta ist noch nicht Apple-notarisiert. Die [Installationsanleitung](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#das-passende-paket-und-die-apple-warnung) erklärt die einmalige Freigabe für das gewählte Paket.
+Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
 ## 🖼️ Einblicke
 
@@ -45,7 +45,13 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-### Neu in Beta 11
+### Neu in Beta 12
+
+- Mac-App, eigenständiger Editor und enthaltene native Komponenten mit Developer-ID-Signatur.
+- Mac-Installer für Apple Silicon und Intel von Apple notarisiert, mit beigefügtem Prüfticket.
+- Sichere Veröffentlichung mit verpflichtender Signatur- und Notarisierungsprüfung vor dem Download.
+
+### Seit Beta 11
 
 - Native Mac-Ausgaben für Apple Silicon und Intel, eingebettetes RDP/VNC und zsh-Terminal.
 - Dateien direkt auf Ordnerzeilen ablegen, innerhalb einer Serververbindung verschieben und Zielpfade über „Verschieben nach …“ wählen.
@@ -124,7 +130,7 @@ Die Tresorverschlüsselung schützt **Verbindungen und Zugangsdaten**. Herunterg
 
 Die benötigten Laufzeiten sind enthalten. Für die Nutzung brauchst du keine Entwicklungswerkzeuge. Die Einstellungen bleiben im jeweiligen Benutzerprofil. Verschlüsselte Arbeitsbereiche lassen sich zwischen Windows und Mac übernehmen.
 
-**Aktueller Stand:** Windows 10/11 x64 und macOS 14 oder neuer, Beta. Die Dateien sind derzeit nicht mit einem Herausgeberzertifikat signiert; `SHA256SUMS.txt` enthält die Prüfsummen. Die Mac-Ausgaben für Apple Silicon und Intel sind lokal ad hoc signiert und noch nicht Apple-notarisiert. Die Kompatibilität externer Server, Cloudkonten und Anmeldeverfahren hängt vom jeweiligen Anbieter ab. [Versionshinweise und bekannte Einschränkungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
+**Aktueller Stand:** Windows 10/11 x64 und macOS 14 oder neuer, Beta. Mac-Ausgaben ab Beta 12 sind mit Developer ID signiert und Apple-notarisiert. Windows-Pakete sind derzeit unsigniert. `SHA256SUMS.txt` enthält die Prüfsummen aller Downloads. Die Kompatibilität externer Server, Cloudkonten und Anmeldeverfahren hängt vom jeweiligen Anbieter ab. [Versionshinweise und bekannte Einschränkungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
 
 ## 🔄 Updates und Versionswahl
 
