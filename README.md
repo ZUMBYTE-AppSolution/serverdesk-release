@@ -36,7 +36,8 @@ Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Appl
 | --- | --- |
 | ![Cloudkonten verwalten](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/cloud-dark.png) | ![Speicherübersicht mit Laufwerksbelegung](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/storage-dark.png) |
 
-| ![Hostgruppen mit verschachtelten Untergruppen](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/host-groups-dark.png) | ![Zugangstresor nach Hosts und Benutzern gruppiert](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/credential-hosts-dark.png) |
+| ![Hostgruppen im Dark Mode](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/host-groups-dark.png) | ![Hostgruppen im Light Mode](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/host-groups-light.png) |
+| ![Zugangstresor nach Hosts und Benutzern gruppiert](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/credential-hosts-dark.png) | ![Zugangsauswahl nach Host und Untergruppe](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/credential-picker-light.png) |
 
 Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für die volle Auflösung.
 
