@@ -2,11 +2,11 @@
 <h1 align="center">Zumbyte - ServerDesk</h1>
 <p align="center">Dateien, Server und Cloudspeicher. Alles an einem Ort.</p>
 <p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases">Herunterladen</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki">Benutzerhandbuch</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
-<p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk-release?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Aktuelle Beta"></p>
+<p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/badge/macOS-14%2B-7152bd?style=flat-square" alt="macOS 14 oder neuer"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk-release?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Aktuelle Beta"></p>
 
 **Zumbyte - ServerDesk** ist dein zentraler Arbeitsplatz für lokale Dateien, Server, Remote-Desktops und Cloudspeicher. Die drei oberen Tabs **Explorer**, **Server & Computer** und **Remote Desktop** führen dich direkt zu deinen Aufgaben. Zwei Dateibereiche, flexible Dateitabs und ein integrierter Zugangstresor helfen dir, auch mit vielen Systemen den Überblick zu behalten. Ob Dateien übertragen, per SSH arbeiten oder Konfigurationen bearbeiten: Deine Werkzeuge bleiben zusammen.
 
-Erhältlich als **Windows-x64-Beta** mit Installer oder als portable Ausgabe. Oberfläche auf Deutsch und Englisch, mit Dark und Light Mode.
+Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple Silicon und Intel. Installer und vollständig enthaltene Laufzeiten machen den Einstieg einfach. Oberfläche auf Deutsch und Englisch, mit Dark und Light Mode.
 
 ## 🖼️ Einblicke
 
@@ -30,6 +30,20 @@ Erhältlich als **Windows-x64-Beta** mit Installer oder als portable Ausgabe. Ob
 
 Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für die volle Auflösung.
 
+<details>
+<summary>Favoritenfarben persönlich gestalten</summary>
+
+![Favoritenfarbe in ServerDesk auswählen](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/favorite-colors.png)
+
+</details>
+
+### Neu in Beta 11
+
+- Native Mac-Ausgaben für Apple Silicon und Intel, eingebettetes RDP/VNC und zsh-Terminal.
+- Dateien direkt auf Ordnerzeilen ablegen, innerhalb einer Serververbindung verschieben und Zielpfade über „Verschieben nach …“ wählen.
+- Favoritenfarben direkt im Colorpicker wählen – mit Palette, freier Farbwahl und Vorschau.
+- Laufwerk-Tabs mit Namen und Windows-Buchstaben; eigene Symbole für SSD, HDD und Wechseldatenträger.
+
 ## ✨ Dein Arbeitsplatz für Dateien und Systeme
 
 | Bereich | Das bietet dir ServerDesk |
@@ -39,7 +53,7 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 | **Flexible Ansicht** | Tabs herausziehen und wieder andocken, weitere App-Fenster öffnen und Sidebar sowie unteren Arbeitsbereich anpassen. Kategorien per Drag-and-drop frei anordnen – auch Datenträger, Netzlaufwerke und Cloudspeicher über den Favoriten. Reihenfolge, Einklappzustände und Fensterpositionen bleiben gespeichert. |
 | **Arbeitsbereiche** | Eigene Verbindungen und Zugangsdaten pro Arbeitsbereich, jeweils mit eigenem Masterkey und Passwort. Berufliche und private Systeme getrennt verwalten. |
 | **Remote Desktop** | RDP und VNC direkt in Verbindungstabs verwenden. Im lokalen LAN oder WLAN nach passenden Diensten suchen und gefundene Systeme als Profile übernehmen. |
-| **Terminal** | Lokale PowerShell und SSH-Sitzungen mit Zwischenablage, Schriftwahl und Größen-Dropdown. Beim Schließen eines SSH-Tabs wird dessen Verbindung beendet. |
+| **Terminal** | Lokale PowerShell unter Windows, zsh auf dem Mac und SSH-Sitzungen mit Zwischenablage, Schriftwahl und Größen-Dropdown. Beim Schließen eines SSH-Tabs wird dessen Verbindung beendet. |
 
 ### Einstellungen übersichtlich finden
 
@@ -49,7 +63,7 @@ Neue Arbeitsbereiche erstellst du über **Neuen Arbeitsbereich erstellen** am En
 
 ### Dateien direkt ans Ziel übertragen
 
-Ziehe Dateien und Ordner zwischen Dateibereichen oder App-Fenstern – oder nutze **Strg+C / Strg+X / Strg+V**. Downloads beginnen nach der Zielwahl und schreiben direkt in den gewählten Ordner. Auch beim Ablegen im Windows-Explorer oder auf dem Desktop werden die Daten ohne vollständigen TEMP-Download übergeben. Server-zu-Server-Kopien werden als Stream weitergeleitet.
+Ziehe Dateien und Ordner zwischen Dateibereichen oder App-Fenstern – oder nutze **Strg+C / Strg+X / Strg+V**. Ordnerzeilen sind direkte Ablageziele. Innerhalb derselben Serververbindung wird beim Ziehen verschoben; Strg-Ziehen (Mac: ⌥) kopiert, Umschalt-Ziehen verschiebt. Über **Verschieben nach …** im Kontextmenü gibst du einen lokalen oder serverseitigen Zielordner an. Vorhandene Namen und ungültige Ziele werden geprüft. Downloads beginnen nach der Zielwahl und schreiben direkt in den gewählten Ordner. Auch beim Ablegen im Windows-Explorer oder auf dem Desktop werden die Daten ohne vollständigen TEMP-Download übergeben. Server-zu-Server-Kopien werden als Stream weitergeleitet. Auf dem Mac nutzt du ⌘C/X/V innerhalb von ServerDesk. Für einen Download direkt in den Finder ziehst du die Auswahl in den Zielordner; die normale Finder-Zwischenablage unterstützt diesen verzögerten Download nicht.
 
 - Aufklappbare Ordnertransfers mit Gesamtgröße, Fortschritt, Geschwindigkeit und geschätzter Restzeit.
 - Dateien oder ganze Ordner pausieren, fortsetzen oder stoppen; optionaler dezenter Ton nach einem abgeschlossenen Download.
@@ -75,7 +89,7 @@ Die Anbieterfreigabe für OneDrive, Google Drive und Dropbox erfolgt derzeit üb
 
 ### Ein Editor, auch ohne Haupt-App
 
-ServerDesk Editor öffnet lokale Dateien unabhängig von der Haupt-App. Unter Windows stehen kaskadierte Kontextmenüs zum Öffnen und Erstellen von Dateien bereit; die Integration lässt sich abschalten.
+ServerDesk Editor öffnet lokale Dateien unabhängig von der Haupt-App. Unter Windows stehen kaskadierte Kontextmenüs zum Öffnen und Erstellen von Dateien bereit. Auf dem Mac gibt es den eigenständigen Editor über „Öffnen mit“ und Finder-Dienste; die Integration lässt sich abschalten.
 
 Mehrere Dateitabs, Sitzungen, Schriftarten und Größen, **Speichern unter**, Dateiüberwachung, Syntaxfarben und sprachabhängige Syntaxprüfung gehören dazu. Ergänzt werden sie durch Code-Faltung, Regex-Suche und Ersetzen, Suchen in Dateien, Dateivergleich sowie wählbare Kodierung und Zeilenenden. Unterstützte Formate umfassen unter anderem HTML, CSS, JavaScript, TypeScript, PHP, Python, C#, SQL, XML, JSON und YAML.
 
@@ -85,7 +99,7 @@ Serverdateien können beim Speichern automatisch zurückgeladen werden. Änderun
 
 **Jeder Arbeitsbereich hat seinen eigenen verschlüsselten Tresor.** Verbindungsprofile und Zugangsdaten werden mit AES-256-GCM geschützt. Ein unabhängiger 256-Bit-Schlüssel wird über das Masterpasswort mit PBKDF2-SHA256 und 600.000 Iterationen abgesichert.
 
-- **Masterpasswort:** Beim Start und Wechsel entsperren. Die optionale Gerätefreigabe liegt unter Windows DPAPI-geschützt im aktuellen Benutzerkonto; das Passwort selbst wird dabei nicht gespeichert.
+- **Masterpasswort:** Beim Start und Wechsel entsperren. Die optionale Gerätefreigabe liegt unter Windows DPAPI-geschützt und unter macOS im Schlüsselbund des aktuellen Benutzerkontos; das Passwort selbst wird dabei nicht gespeichert.
 - **Auto-Lock:** Eine sechsstellige PIN festlegen und nach 1, 5, 10, 15, 20, 30 oder 60 Minuten Inaktivität sperren lassen. Alle App-Fenster werden gesperrt und Verbindungen getrennt. Die korrekte PIN entsperrt automatisch und stellt zuvor aktive Verbindungen wieder her. Ein Neustart verlangt bei aktivem Auto-Lock immer das Masterpasswort.
 - **Sensible Aktionen:** Passwortanzeigen, Verbindungen löschen und Änderungen am Masterkey erfordern eine manuelle Masterpasswort-Freigabe. Diese gilt höchstens zehn Minuten.
 - **Eigener Speicherort:** Masterkey und Speicherdatei lokal, auf einem anderen Datenträger oder in einem synchronisierten Cloudordner ablegen. Import, Export, Änderungsüberwachung und Konfliktschutz helfen beim Gerätewechsel. Parallele Änderungen werden nicht automatisch zusammengeführt.
@@ -100,9 +114,9 @@ Die Tresorverschlüsselung schützt **Verbindungen und Zugangsdaten**. Herunterg
 3. Ein Masterpasswort mit mindestens zwölf Zeichen für deinen Arbeitsbereich festlegen.
 4. Links und rechts Verzeichnisse öffnen, Verbindungsprofile anlegen und deine Ansicht einrichten.
 
-Die benötigten Laufzeiten sind enthalten. Für die Nutzung brauchst du keine Entwicklungswerkzeuge. Auch die portable Ausgabe speichert Einstellungen im Windows-Benutzerprofil.
+Die benötigten Laufzeiten sind enthalten. Für die Nutzung brauchst du keine Entwicklungswerkzeuge. Die Einstellungen bleiben im jeweiligen Benutzerprofil. Verschlüsselte Arbeitsbereiche lassen sich zwischen Windows und Mac übernehmen.
 
-**Aktueller Stand:** Windows 10/11 x64, Beta. Die Dateien sind derzeit nicht mit einem Herausgeberzertifikat signiert; `SHA256SUMS.txt` enthält die Prüfsummen. Eine macOS-Ausgabe ist noch nicht verfügbar. Die Kompatibilität externer Server, Cloudkonten und Anmeldeverfahren hängt vom jeweiligen Anbieter ab. [Versionshinweise und bekannte Einschränkungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
+**Aktueller Stand:** Windows 10/11 x64 und macOS 14 oder neuer, Beta. Die Dateien sind derzeit nicht mit einem Herausgeberzertifikat signiert; `SHA256SUMS.txt` enthält die Prüfsummen. Die Mac-Ausgaben für Apple Silicon und Intel sind lokal ad hoc signiert und noch nicht Apple-notarisiert. Die Kompatibilität externer Server, Cloudkonten und Anmeldeverfahren hängt vom jeweiligen Anbieter ab. [Versionshinweise und bekannte Einschränkungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
 
 ## 🔄 Updates und Versionswahl
 
