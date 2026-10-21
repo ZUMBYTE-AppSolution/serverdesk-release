@@ -47,6 +47,8 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 ### Neu in Beta 16
 
+- Integrierte Mac-Updates laden und installieren neue Versionen direkt; die fälschliche Aufforderung zum erneuten Installer-Download wurde korrigiert.
+
 - Bei abgelehnter SSH-/SFTP-Anmeldung direkt einen anderen Zugang wählen oder das Passwort erneut eingeben. Gespeicherte Zugänge bleiben erhalten.
 - Verbesserte Passwortabfragen für macOS und weitere SSH-Server; abgelehnte Passwörter werden bei wiederholter Abfrage nicht automatisch erneut gesendet.
 
