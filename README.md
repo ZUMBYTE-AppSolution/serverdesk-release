@@ -4,7 +4,7 @@
 <p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases">Herunterladen</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki">Benutzerhandbuch</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 <p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk-release?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Aktuelle Beta"></p>
 
-**Zumbyte - ServerDesk** ist dein zentraler Arbeitsplatz für lokale Dateien, Server, Remote-Desktops und Cloudspeicher. Zwei Dateibereiche, flexible Tabs und ein integrierter Zugangstresor helfen dir, auch mit vielen Systemen den Überblick zu behalten. Ob Dateien übertragen, per SSH arbeiten oder Konfigurationen bearbeiten: Deine Werkzeuge bleiben zusammen.
+**Zumbyte - ServerDesk** ist dein zentraler Arbeitsplatz für lokale Dateien, Server, Remote-Desktops und Cloudspeicher. Die drei oberen Tabs **Explorer**, **Server & Computer** und **Remote Desktop** führen dich direkt zu deinen Aufgaben. Zwei Dateibereiche, flexible Dateitabs und ein integrierter Zugangstresor helfen dir, auch mit vielen Systemen den Überblick zu behalten. Ob Dateien übertragen, per SSH arbeiten oder Konfigurationen bearbeiten: Deine Werkzeuge bleiben zusammen.
 
 Erhältlich als **Windows-x64-Beta** mit Installer oder als portable Ausgabe. Oberfläche auf Deutsch und Englisch, mit Dark und Light Mode.
 
@@ -36,10 +36,16 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 | --- | --- |
 | **Dateimanager** | Zwei Dateibereiche mit mehreren Tabs, Pfadleisten, Suche, farbigen Favoriten und anpassbaren Spalten. Sortierung, Erstelldatum und serverabhängige Rechte, Owner und Gruppe. |
 | **Verbindungen** | SSH, SFTP, FTP, FTPS, HTTPS-WebDAV, SMB, RDP und VNC. Profile desselben Hosts gruppieren, Status erkennen und mehrere Verbindungen gemeinsam öffnen. |
-| **Flexible Fenster** | Tabs herausziehen und wieder andocken, zusätzliche App-Fenster öffnen und Sidebar sowie unteren Arbeitsbereich anpassen. Fensterpositionen und Größen bleiben gespeichert. |
+| **Flexible Ansicht** | Tabs herausziehen und wieder andocken, weitere App-Fenster öffnen und Sidebar sowie unteren Arbeitsbereich anpassen. Kategorien per Drag-and-drop frei anordnen – auch Datenträger, Netzlaufwerke und Cloudspeicher über den Favoriten. Reihenfolge, Einklappzustände und Fensterpositionen bleiben gespeichert. |
 | **Arbeitsbereiche** | Eigene Verbindungen und Zugangsdaten pro Arbeitsbereich, jeweils mit eigenem Masterkey und Passwort. Berufliche und private Systeme getrennt verwalten. |
 | **Remote Desktop** | RDP und VNC direkt in Verbindungstabs verwenden. Im lokalen LAN oder WLAN nach passenden Diensten suchen und gefundene Systeme als Profile übernehmen. |
 | **Terminal** | Lokale PowerShell und SSH-Sitzungen mit Zwischenablage, Schriftwahl und Größen-Dropdown. Beim Schließen eines SSH-Tabs wird dessen Verbindung beendet. |
+
+### Einstellungen übersichtlich finden
+
+Über das Zahnrad oder **Einstellungen** unten links öffnest du die eigene Einstellungs-Sidebar. Unter **Anwendung** findest du Sprache, Explorer, Startverhalten, Editor, Terminal und Übertragungen. **Verwaltung** bündelt Arbeitsbereiche, Zugangstresor, Sicherheit und Cloudkonten. Updates und Informationen zu ServerDesk stehen unter **Information**.
+
+Neue Arbeitsbereiche erstellst du über **Neuen Arbeitsbereich erstellen** am Ende des Arbeitsbereich-Dropdowns.
 
 ### Dateien direkt ans Ziel übertragen
 
@@ -55,7 +61,7 @@ ZIP, TAR, TAR.GZ und GZ lassen sich lokal über das Kontextmenü erstellen bezie
 
 ### Cloud und Speicher übersichtlich verwalten
 
-Unter **Speicher** findest du Datenträger mit Speicherbelegung, Netzlaufwerke und Cloudkonten in getrennten, einklappbaren Gruppen.
+Datenträger mit Speicherbelegung, Netzlaufwerke und Cloudkonten erscheinen zunächst unter **Speicher**. Ziehe ihre Kategorieüberschrift an eine beliebige Position in der Sidebar, um sie als eigene Kategorie anzuordnen. Über **Unter Speicher einordnen** im Kontextmenü kannst du sie wieder zusammenfassen.
 
 | Anbieter / Zugang | Anmeldung |
 | --- | --- |
@@ -100,7 +106,7 @@ Die benötigten Laufzeiten sind enthalten. Für die Nutzung brauchst du keine En
 
 ## 🔄 Updates und Versionswahl
 
-In der installierten Ausgabe wählst du unter **Updates & Versionen** zwischen **Release** und **Beta**. Vor einem Update werden Version und Changelog angezeigt. Pakete werden über das offizielle GitHub-Release-Repository bezogen und gegen die SHA-256-Prüfsumme des Releasefeeds geprüft.
+In der installierten Ausgabe wählst du unter **Einstellungen → Updates & Versionen** zwischen **Release** und **Beta**. Vor einem Update werden Version und Changelog angezeigt. Pakete werden über das offizielle GitHub-Release-Repository bezogen und gegen die SHA-256-Prüfsumme des Releasefeeds geprüft.
 
 Verfügbare ältere Pakete können für einen Rückwechsel ausgewählt werden, soweit sie mit den gespeicherten Sicherheits- und Kontodaten kompatibel sind. Ein Rollback setzt persönliche Dateien und Tresore nicht zurück. Portable Ausgaben werden durch ein neues entpacktes Paket aktualisiert. [Updates und Rollback](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Updates-und-Rollback).
 
@@ -108,7 +114,7 @@ Verfügbare ältere Pakete können für einen Rückwechsel ausgewählt werden, s
 
 [Benutzerhandbuch](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki) · [Fehler melden](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/issues) · [Support](https://www.zumbyte.de/support/)
 
-ServerDesk ist proprietäre Software von **Zumbyte - AppSolution**. Nutzungsbedingungen und Einschränkungen stehen in der [Lizenz](LICENSE). Der Quellcode ist nicht öffentlich. Die Lizenzen mitgelieferter Komponenten findest du direkt unter **Über ServerDesk → Lizenzen ansehen** und im Downloadpaket. Die Drittkomponenten erlauben kommerzielle Einbindung unter ihren jeweiligen Lizenzbedingungen.
+ServerDesk ist proprietäre Software von **Zumbyte - AppSolution**. Nutzungsbedingungen und Einschränkungen stehen in der [Lizenz](LICENSE). Der Quellcode ist nicht öffentlich. Die Lizenzen mitgelieferter Komponenten findest du direkt unter **Einstellungen → Über ServerDesk → Lizenzen ansehen** und im Downloadpaket. Die Drittkomponenten erlauben kommerzielle Einbindung unter ihren jeweiligen Lizenzbedingungen.
 
 **Zumbyte - AppSolution | [www.zumbyte.de](https://www.zumbyte.de/)**  
 © 2026 Zumbyte - AppSolution · [Datenschutz](https://www.zumbyte.de/datenschutz/) · [Impressum](https://www.zumbyte.de/impressum/)
