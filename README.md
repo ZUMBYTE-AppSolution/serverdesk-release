@@ -8,6 +8,14 @@
 
 Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple Silicon und Intel. Installer und vollständig enthaltene Laufzeiten machen den Einstieg einfach. Oberfläche auf Deutsch und Englisch, mit Dark und Light Mode.
 
+| Dein Rechner | Passender Installer |
+| --- | --- |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.11/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.11/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.11/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+
+Die Mac-Beta ist noch nicht Apple-notarisiert. Die [Installationsanleitung](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#das-passende-paket-und-die-apple-warnung) erklärt die einmalige Freigabe für das gewählte Paket.
+
 ## 🖼️ Einblicke
 
 ![ServerDesk: zwei Dateibereiche, Serververbindungen und Transfers](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/explorer-dark.png)
