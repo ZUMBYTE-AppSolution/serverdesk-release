@@ -4,15 +4,15 @@
 <p align="center"><a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases">Herunterladen</a> · <a href="https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki">Benutzerhandbuch</a> · <a href="https://www.zumbyte.de/support/">Support</a></p>
 <p align="center"><img src="https://img.shields.io/badge/Windows-10%20%2F%2011-7152bd?style=flat-square" alt="Windows 10 / 11"> <img src="https://img.shields.io/badge/macOS-14%2B-7152bd?style=flat-square" alt="macOS 14 oder neuer"> <img src="https://img.shields.io/github/v/release/ZUMBYTE-AppSolution/serverdesk-release?include_prereleases&amp;style=flat-square&amp;label=Beta" alt="Aktuelle Beta"></p>
 
-**Zumbyte - ServerDesk** ist dein zentraler Arbeitsplatz für lokale Dateien, Server, Remote-Desktops und Cloudspeicher. Die drei oberen Tabs **Explorer**, **Server & Computer** und **Remote Desktop** führen dich direkt zu deinen Aufgaben. Zwei Dateibereiche, flexible Dateitabs und ein integrierter Zugangstresor helfen dir, auch mit vielen Systemen den Überblick zu behalten. Ob Dateien übertragen, per SSH arbeiten oder Konfigurationen bearbeiten: Deine Werkzeuge bleiben zusammen.
+**Zumbyte - ServerDesk** ist dein zentraler Arbeitsplatz für lokale Dateien, Server, Remote-Desktops und Cloudspeicher. Die Hauptansichten **Explorer** und **Verbindungen** führen dich direkt zu deinen Aufgaben. Unter Verbindungen wechselst du zwischen **Server & Computer** und **Remote Desktop**. Zwei Dateibereiche, flexible Dateitabs und ein integrierter Zugangstresor helfen dir, auch mit vielen Systemen den Überblick zu behalten. Ob Dateien übertragen, per SSH arbeiten oder Konfigurationen bearbeiten: Deine Werkzeuge bleiben zusammen.
 
 Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple Silicon und Intel. Installer und vollständig enthaltene Laufzeiten machen den Einstieg einfach. Oberfläche auf Deutsch und Englisch, mit Dark und Light Mode.
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.20/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.20/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.20/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.21/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.21/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.21/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -62,10 +62,17 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 20
+## 🆕 Aktuelles Changelog · Beta 21
 
-- Überarbeiteter Versand von VNC-Eingaben: Mausbewegungen werden gebündelt, Klicks und Tastatureingaben behalten ihre Reihenfolge.
-- Parallele VNC-Sitzungen verwenden getrennte Eingabe-Warteschlangen; gehaltene Maustasten werden bei Fokusverlust freigegeben.
+- **Flüssigere VNC-Steuerung:** schnellere komprimierte Bildübertragung, vorgezogener Bildabruf und sofort wirksame Einstellungen für Bildrate und Kompressionswunsch. Die Steuerung eines MacBooks von Windows aus wurde direkt in ServerDesk erprobt.
+- **Remote-Ansicht:** echter Vollbildmodus, lokale Skalierung, serverabhängige Auflösungsauswahl und VNC-Monitore in eigenen Fenstern mit derselben Verbindung. Lokalen Standardzeiger oder Original-Cursorform des Servers wählen.
+- **SecureVNC:** optionales DSM-Modul unter Windows x64 ausdrücklich aktivieren und geprüft vom Hersteller herunterladen oder lokal auswählen.
+- **Netzwerkspeicher:** SMB-/NFS-Dienste im LAN/WLAN finden. SMB mit Tresorzugang, Benutzer/Domäne oder vorhandener Windows-Anmeldung öffnen; NFS über einen Systemmount verwenden.
+- **Gemeinsame Arbeitsbereiche:** Assistent für NAS-/SMB-Speicher und direkte Cloud-Anbieterauswahl, verschlüsselte lokale Sicherungen und automatische Übernahme externer Änderungen im Hintergrund.
+- **Cloudkonten:** einstellbare Keep-alives und Benachrichtigungen, die bei erforderlicher Neuanmeldung direkt das betroffene Konto öffnen.
+- **QuickLock und Auto-Lock:** vier- oder sechsstellige PIN oder Masterpasswort; Verbindungen während der Sperre auf Wunsch bestehen lassen. Manuell sperren über das Schloss oder Strg+Alt+L, am Mac Cmd+Alt+L.
+- **Verwaltung und Tabs:** Verbindungen auch in den Einstellungen verwalten, automatische Verbindungen aus wiederhergestellten Tabs aufbauen und übervolle Tableisten per Pfeilen oder mehrzeilig verwenden.
+- **Editor:** Dateierkennung und Syntaxfarben für PowerShell, Batch/CMD und Shell/Bash; PowerShell-Syntaxprüfung ohne Skriptausführung.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
@@ -112,7 +119,7 @@ Datenträger mit Speicherbelegung, Netzlaufwerke und Cloudkonten erscheinen zun�
 
 Die Anbieterfreigabe für OneDrive, Google Drive und Dropbox erfolgt derzeit über rclone. iCloud-App-Passwörter werden für den direkten Drive-Zugang nicht unterstützt. [Cloudkonten einrichten](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Cloud-und-Netzwerk).
 
-### Arbeitsbereich auf dem NAS · ab Beta 21
+### Arbeitsbereich auf dem NAS
 
 Verbindungen und Zugänge lassen sich auf einer gemeinsamen SMB-Freigabe verwalten. Der Einrichtungsassistent hilft beim Verbinden unter Windows und macOS, beim Verlagern des geschützten Arbeitsbereichs und beim Import auf weiteren Geräten. Änderungen werden im Hintergrund übernommen; lokale Sicherungen bleiben verschlüsselt und lassen sich mit dem Masterpasswort wiederherstellen.
 
@@ -122,7 +129,7 @@ Die lokale Netzwerksuche findet SMB- und NFS-Dienste im gewählten LAN-/WLAN-Ber
 
 ServerDesk Editor öffnet lokale Dateien unabhängig von der Haupt-App. Unter Windows stehen kaskadierte Kontextmenüs zum Öffnen und Erstellen von Dateien bereit. Auf dem Mac gibt es den eigenständigen Editor über „Öffnen mit“ und Finder-Dienste; die Integration lässt sich abschalten.
 
-Mehrere Dateitabs, Sitzungen, Schriftarten und Größen, **Speichern unter**, Dateiüberwachung, Syntaxfarben und sprachabhängige Syntaxprüfung gehören dazu. Ergänzt werden sie durch Code-Faltung, Regex-Suche und Ersetzen, Suchen in Dateien, Dateivergleich sowie wählbare Kodierung und Zeilenenden. Unterstützte Formate umfassen unter anderem HTML, CSS, JavaScript, TypeScript, PHP, Python, C#, SQL, XML, JSON und YAML.
+Mehrere Dateitabs, Sitzungen, Schriftarten und Größen, **Speichern unter**, Dateiüberwachung, Syntaxfarben und sprachabhängige Syntaxprüfung gehören dazu. Ergänzt werden sie durch Code-Faltung, Regex-Suche und Ersetzen, Suchen in Dateien, Dateivergleich sowie wählbare Kodierung und Zeilenenden. Unterstützte Formate umfassen unter anderem HTML, CSS, JavaScript, TypeScript, PHP, Python, C#, SQL, XML, JSON, YAML, PowerShell, Batch/CMD und Shell/Bash.
 
 Serverdateien können beim Speichern automatisch zurückgeladen werden. Änderungen werden auf Konflikte geprüft. Auf Wunsch verwendest du einen externen Editor. [Mehr zum Editor](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Editor).
 
@@ -131,7 +138,7 @@ Serverdateien können beim Speichern automatisch zurückgeladen werden. Änderun
 **Jeder Arbeitsbereich hat seinen eigenen verschlüsselten Tresor.** Verbindungsprofile und Zugangsdaten werden mit AES-256-GCM geschützt. Ein unabhängiger 256-Bit-Schlüssel wird über das Masterpasswort mit PBKDF2-SHA256 und 600.000 Iterationen abgesichert.
 
 - **Masterpasswort:** Beim Start und Wechsel entsperren. Die optionale Gerätefreigabe liegt unter Windows DPAPI-geschützt und unter macOS im Schlüsselbund des aktuellen Benutzerkontos; das Passwort selbst wird dabei nicht gespeichert.
-- **Auto-Lock:** Eine sechsstellige PIN festlegen und nach 1, 5, 10, 15, 20, 30 oder 60 Minuten Inaktivität sperren lassen. Alle App-Fenster werden gesperrt und Verbindungen getrennt. Die korrekte PIN entsperrt automatisch und stellt zuvor aktive Verbindungen wieder her. Ein Neustart verlangt bei aktivem Auto-Lock immer das Masterpasswort.
+- **Auto-Lock und QuickLock:** Mit vier- oder sechsstelliger PIN oder dem Masterpasswort nach 1, 5, 10, 15, 20, 30 oder 60 Minuten Inaktivität sperren. Wahlweise Verbindungen bestehen lassen oder trennen und nach dem Entsperren wiederherstellen. PINs bestätigen sich automatisch; das Masterpasswort wird über **Freischalten** bestätigt. Manuell sperren über das Schloss oder Strg+Alt+L (Mac: Cmd+Alt+L). Ein Neustart verlangt bei aktivem Auto-Lock immer das Masterpasswort. Erweiterte Sperroptionen benötigen Beta 21 oder neuer auf allen beteiligten Geräten.
 - **Sensible Aktionen:** Passwortanzeigen, Verbindungen löschen und Änderungen am Masterkey erfordern eine manuelle Masterpasswort-Freigabe. Diese gilt höchstens zehn Minuten.
 - **Eigener Speicherort:** Masterkey und Speicherdatei lokal, auf einem anderen Datenträger oder in einem synchronisierten Cloudordner ablegen. Import, Export, Änderungsüberwachung und Konfliktschutz helfen beim Gerätewechsel. Parallele Änderungen werden nicht automatisch zusammengeführt.
 - **Verbindungsvertrauen:** SSH-Hostschlüssel werden geprüft; TLS-Zertifikatsprüfungen bleiben aktiv. Verwende verschlüsselte Protokolle: klassisches FTP und manche VNC-Verfahren schützen den Datenverkehr nicht durchgängig.
@@ -153,7 +160,7 @@ Die benötigten Laufzeiten sind enthalten. Für die Nutzung brauchst du keine En
 
 In der installierten Ausgabe wählst du unter **Einstellungen → Updates & Versionen** zwischen **Release** und **Beta**. Vor einem Update werden Version und Changelog angezeigt. Pakete werden über das offizielle GitHub-Release-Repository bezogen und gegen die SHA-256-Prüfsumme des Releasefeeds geprüft.
 
-Verfügbare ältere Pakete können für einen Rückwechsel ausgewählt werden, soweit sie mit den gespeicherten Sicherheits- und Kontodaten kompatibel sind. Ein Rollback setzt persönliche Dateien und Tresore nicht zurück. Portable Ausgaben werden durch ein neues entpacktes Paket aktualisiert. [Updates und Rollback](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Updates-und-Rollback).
+Verfügbare ältere Pakete können für einen Rückwechsel ausgewählt werden, soweit sie mit den gespeicherten Sicherheits- und Kontodaten kompatibel sind. Ein Rollback setzt persönliche Dateien und Tresore nicht zurück. Unter Windows benötigen integrierte Updates die installierte Ausgabe; portable Windows-Ausgaben werden durch ein neues entpacktes Paket aktualisiert. Auf dem Mac unterstützt ein erkanntes, beschreibbares App-Bundle den integrierten Updateweg. [Updates und Rollback](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Updates-und-Rollback).
 
 ## 💬 Hilfe, Lizenz und Kontakt
 
