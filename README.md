@@ -48,70 +48,26 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-### Neu in Beta 20
-
-- Schnellere VNC-Steuerung mit gebündelten Mausbewegungen: Klicks und Tastatureingaben bleiben auch bei schnellen Bewegungen reaktionsfähig.
-- Ziehen, Scrollen und parallele VNC-Sitzungen ohne aufgestaute Mausereignisse; gehaltene Maustasten werden bei Fokusverlust freigegeben.
-
-### Neu in Beta 19
-
-- Hostgruppen, Hauptgruppen und Untergruppen bequem über das Kontextmenü erstellen, umbenennen und löschen – auch als leere Struktur für spätere Verbindungen.
-- Ganze Zweige umbenennen und ihre Reihenfolge erhalten. Beim Löschen einer Gruppe bleiben alle Verbindungen und Zugangsdaten erhalten; die Profile erscheinen direkt unter dem Host.
-- Gruppenstruktur und Anzeigenamen verschlüsselt je Arbeitsbereich speichern und zwischen Windows und Mac synchronisieren.
+<details>
+<summary>Gruppen verwalten und Verbindungen sortieren</summary>
 
 <p align="center">
   <img src="assets/screenshots/group-management-dark.png" alt="Hostgruppen und verschachtelte Gruppen verwalten im dunklen Design" width="49%">
   <img src="assets/screenshots/group-management-light.png" alt="Leere Haupt- und Untergruppen sowie eigene Hostnamen im hellen Design" width="49%">
 </p>
-
-### Neu in Beta 18
-
-- Verbindungen und ganze Untergruppen mit der Maus verschieben; Hosts, Gruppen und Verbindungen nach eigenen Wünschen anordnen.
-- Einfügelinien, Aufklappen beim Darüberhalten und Scrollen am Rand unterstützen Drag-and-drop. Alternativ im Kontextmenü nach oben, nach unten oder nach Namen sortieren.
-- Reihenfolge verschlüsselt je Arbeitsbereich speichern und zwischen Windows und Mac synchronisieren. Laufende Sitzungen bleiben bei reinen Gruppen- und Sortieränderungen bestehen.
-
 <p align="center">
   <img src="assets/screenshots/connection-drag-dark.png" alt="Verbindung per Drag-and-drop in eine Untergruppe verschieben" width="49%">
   <img src="assets/screenshots/connection-order-light.png" alt="Individuell angeordnete Host- und Untergruppen im hellen Design" width="49%">
 </p>
 
-### Neu in Beta 17
+</details>
 
-- Hosts mit allen zugehörigen Verbindungsarten übersichtlich bündeln und verschachtelte Untergruppen für Benutzer, Aufgaben und Umgebungen anlegen.
-- Benutzer und Ports je Verbindung erkennen; Host- und Untergruppen aufklappen, gemeinsam verbinden und per Kontextmenü neu zuordnen.
-- Dieselbe Struktur im Zugangstresor und bei der Zugangsauswahl. Gemeinsam genutzte Zugänge erscheinen unter mehreren Hosts und bleiben einmalig verschlüsselt gespeichert.
+## 🆕 Aktuelles Changelog · Beta 20
 
-### Neu in Beta 16
+- Überarbeiteter Versand von VNC-Eingaben: Mausbewegungen werden gebündelt, Klicks und Tastatureingaben behalten ihre Reihenfolge.
+- Parallele VNC-Sitzungen verwenden getrennte Eingabe-Warteschlangen; gehaltene Maustasten werden bei Fokusverlust freigegeben.
 
-- Integrierte Mac-Updates laden und installieren neue Versionen direkt; die fälschliche Aufforderung zum erneuten Installer-Download wurde korrigiert.
-
-- Bei abgelehnter SSH-/SFTP-Anmeldung direkt einen anderen Zugang wählen oder das Passwort erneut eingeben. Gespeicherte Zugänge bleiben erhalten.
-- Verbesserte Passwortabfragen für macOS und weitere SSH-Server; abgelehnte Passwörter werden bei wiederholter Abfrage nicht automatisch erneut gesendet.
-
-### Neu in Beta 15
-
-- Gemeinsame Cloud-Arbeitsbereiche übernehmen neue, geänderte und entfernte Verbindungen automatisch. Offene Editorinhalte und unveränderte Sitzungen bleiben erhalten.
-
-- Passwort eingeben oder Tresorzugang auswählen; Zugang auf Wunsch verschlüsselt speichern. Verbesserte SSH-/SFTP-Anmeldung einschließlich Keyboard Interactive und SSH-Schlüsseln.
-- RDP und VNC mit passender Bildgröße, Zoom, Auflösungswahl, Vollbild und erweiterten Anzeigeoptionen.
-- Eigene Verbindungsnamen bleiben in der Seitenleiste sichtbar.
-
-- Arbeitsbereiche in den Einstellungen löschen – auch den Standard-Arbeitsbereich und den letzten verbleibenden.
-- Passwortgeschütztes Entfernen aus allen App-Fenstern; offene Bearbeitungen und laufende Transfers werden berücksichtigt.
-- Ohne Arbeitsbereiche direkt einen neuen erstellen oder ein verschlüsseltes Masterkey-/Speicherpaar importieren.
-
-### Seit Beta 12
-
-- Mac-App, eigenständiger Editor und enthaltene native Komponenten mit Developer-ID-Signatur.
-- Mac-Installer für Apple Silicon und Intel von Apple notarisiert, mit beigefügtem Prüfticket.
-- Sichere Veröffentlichung mit verpflichtender Signatur- und Notarisierungsprüfung vor dem Download.
-
-### Seit Beta 11
-
-- Native Mac-Ausgaben für Apple Silicon und Intel, eingebettetes RDP/VNC und zsh-Terminal.
-- Dateien direkt auf Ordnerzeilen ablegen, innerhalb einer Serververbindung verschieben und Zielpfade über „Verschieben nach …“ wählen.
-- Favoritenfarben direkt im Colorpicker wählen – mit Palette, freier Farbwahl und Vorschau.
-- Laufwerk-Tabs mit Namen und Windows-Buchstaben; eigene Symbole für SSD, HDD und Wechseldatenträger.
+[Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
 ## ✨ Dein Arbeitsplatz für Dateien und Systeme
 
@@ -155,6 +111,12 @@ Datenträger mit Speicherbelegung, Netzlaufwerke und Cloudkonten erscheinen zun�
 | Lokale Sync-Ordner | Vorhandene Ordner nutzen; gefundenes iCloud Drive erst nach deiner Zustimmung |
 
 Die Anbieterfreigabe für OneDrive, Google Drive und Dropbox erfolgt derzeit über rclone. iCloud-App-Passwörter werden für den direkten Drive-Zugang nicht unterstützt. [Cloudkonten einrichten](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Cloud-und-Netzwerk).
+
+### Arbeitsbereich auf dem NAS · ab Beta 21
+
+Verbindungen und Zugänge lassen sich auf einer gemeinsamen SMB-Freigabe verwalten. Der Einrichtungsassistent hilft beim Verbinden unter Windows und macOS, beim Verlagern des geschützten Arbeitsbereichs und beim Import auf weiteren Geräten. Änderungen werden im Hintergrund übernommen; lokale Sicherungen bleiben verschlüsselt und lassen sich mit dem Masterpasswort wiederherstellen.
+
+Die lokale Netzwerksuche findet SMB- und NFS-Dienste im gewählten LAN-/WLAN-Bereich und prüft ihre Protokollantworten ohne Anmeldung. SMB-Freigaben werden gezielt als Verbindungsprofil eingerichtet. NFS wird über einen bereits im Betriebssystem eingebundenen Ordner verwendet. [NAS- und Netzlaufwerk-Anleitung](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Workspace-auf-NAS-und-Netzlaufwerk).
 
 ### Ein Editor, auch ohne Haupt-App
 
