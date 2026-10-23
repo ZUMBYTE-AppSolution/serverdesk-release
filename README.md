@@ -64,6 +64,7 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 ## 🆕 Aktuelles Changelog · Beta 23
 
+- Netzlaufwerke erscheinen ausschließlich unter **Speicher → Netzlaufwerke**. Profil und Betriebssystem-Einbindungen werden gemeinsam angezeigt; Bearbeiten, automatisches Verbinden und Entfernen sind im Kontextmenü und unter **Einstellungen → Speicher & Cloud** erreichbar.
 - Netzlaufwerke auf dem Mac werden vor dem Entsperren und vor der Prüfung synchronisierter Workspace-Dateien verbunden. Gespeicherte macOS-Anmeldungen werden verwendet; falls nötig steht beim Öffnen die Systemanmeldung zur Verfügung.
 - Fehlende ältere Netzlaufwerk-Zuordnungen werden aus einer vorhandenen Einbindung übernommen. Bei Ausfällen bleibt die Wiederherstellungsansicht geöffnet; leere oder veraltete lokale Daten überschreiben den gemeinsamen Speicher nicht.
 - Gemeinsame SMB-/NFS-Adressen und lokale Zugriffspfade werden getrennt verwaltet. Unterordner und geänderte Mac-Einhängepunkte bleiben korrekt zugeordnet; SMB-Freigaben unter Bonjour-Namen werden anhand der aktiven Serversitzung erkannt.
