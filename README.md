@@ -10,9 +10,9 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.21/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.21/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.21/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.22/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.22/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.22/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -62,17 +62,18 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 21
+## 🆕 Aktuelles Changelog · Beta 22
 
-- **Flüssigere VNC-Steuerung:** schnellere komprimierte Bildübertragung, vorgezogener Bildabruf und sofort wirksame Einstellungen für Bildrate und Kompressionswunsch. Die Steuerung eines MacBooks von Windows aus wurde direkt in ServerDesk erprobt.
-- **Remote-Ansicht:** echter Vollbildmodus, lokale Skalierung, serverabhängige Auflösungsauswahl und VNC-Monitore in eigenen Fenstern mit derselben Verbindung. Lokalen Standardzeiger oder Original-Cursorform des Servers wählen.
-- **SecureVNC:** optionales DSM-Modul unter Windows x64 ausdrücklich aktivieren und geprüft vom Hersteller herunterladen oder lokal auswählen.
-- **Netzwerkspeicher:** SMB-/NFS-Dienste im LAN/WLAN finden. SMB mit Tresorzugang, Benutzer/Domäne oder vorhandener Windows-Anmeldung öffnen; NFS über einen Systemmount verwenden.
-- **Gemeinsame Arbeitsbereiche:** Assistent für NAS-/SMB-Speicher und direkte Cloud-Anbieterauswahl, verschlüsselte lokale Sicherungen und automatische Übernahme externer Änderungen im Hintergrund.
-- **Cloudkonten:** einstellbare Keep-alives und Benachrichtigungen, die bei erforderlicher Neuanmeldung direkt das betroffene Konto öffnen.
-- **QuickLock und Auto-Lock:** vier- oder sechsstellige PIN oder Masterpasswort; Verbindungen während der Sperre auf Wunsch bestehen lassen. Manuell sperren über das Schloss oder Strg+Alt+L, am Mac Cmd+Alt+L.
-- **Verwaltung und Tabs:** Verbindungen auch in den Einstellungen verwalten, automatische Verbindungen aus wiederhergestellten Tabs aufbauen und übervolle Tableisten per Pfeilen oder mehrzeilig verwenden.
-- **Editor:** Dateierkennung und Syntaxfarben für PowerShell, Batch/CMD und Shell/Bash; PowerShell-Syntaxprüfung ohne Skriptausführung.
+- **Sicherer erster Start:** Speicherort auswählen, einen bestehenden geschützten Arbeitsbereich importieren oder ein vorhandenes Dateipaar vom NAS übernehmen. Vor der Auswahl wird kein leerer Arbeitsbereich angelegt.
+- **Sync ohne Datenverlust beim Start:** Ladeansicht mit Status und Quelle. Ist ein Netzlaufwerk nicht erreichbar, bleibt ServerDesk mit Prüfen, Wiederverbinden und Dateiauswahl geöffnet. Vor dem erfolgreichen Einlesen werden keine Ersatzdaten in den gemeinsamen Speicher geschrieben.
+- **NAS-Verwaltung:** Einstellungen zeigen Freigabe, Verbindung, Masterkey-/Speicherpfade und Überwachungsstatus. SMB-Profile bleiben auch ohne aktiven Mount sichtbar; gemeinsame Serveradressen und gerätespezifische Windows-/Mac-Pfade werden getrennt behandelt.
+- **Ruhigere Cloudverbindungen:** Nextcloud und WebDAV benötigen keine zusätzliche Keep-alive-Anfrage. Die dadurch ausgelöste 405-Fehlermeldung entfällt. Anmeldefehler führen weiterhin direkt zum passenden Konto.
+- **Nachvollziehbare Aktivitäten:** Verbindungs- und Transferfehler, Sync-Prüfungen und eingelesene Änderungen erscheinen im Aktivitätsbereich. Meldungen lassen sich einzeln oder gesammelt kopieren.
+- **Remote-Tastenkürzel:** Die fokussierte RDP-/VNC-Sitzung erhält die Tastenkombinationen. Lokale Mac-Menüaktionen werden dabei abgefangen; geschützte Systemkombinationen lassen sich über die Sitzungsaktionen senden.
+- **Textzwischenablage:** VNC in beide Richtungen, einschließlich Unicode bei unterstützter ExtendedClipboard-Erweiterung. Die Freigabe lässt sich deaktivieren und wird während der App-Sperre geschützt.
+- **RDP-Dateizwischenablage:** Windows verwendet den Microsoft-Kanal. Auf dem Mac können Dateien und Ordner gestreamt und direkt in einen ServerDesk-Dateibereich eingefügt oder in einen gewählten Zielordner geladen werden. Für VNC-Dateien steht der separate SFTP-/SMB-Weg bereit.
+- **Remote-Komponenten einrichten:** Über einen vorhandenen SSH-Verwaltungszugang prüfen und unterstützte SFTP-/RDP-Komponenten nach Masterpasswort-Freigabe und Zielbestätigung installieren. Für Geräte ohne Verwaltungszugang gibt es eine Anleitung zur Ersteinrichtung.
+- **Windows und macOS:** Installer und Updatepakete für Windows x64 sowie macOS Apple Silicon und Intel. Mac-App und Installer sind mit Developer ID signiert und von Apple notarisiert.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
