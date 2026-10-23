@@ -10,9 +10,9 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.22/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.22/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.22/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.23/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.23/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.23/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -62,18 +62,13 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 22
+## 🆕 Aktuelles Changelog · Beta 23
 
-- **Sicherer erster Start:** Speicherort auswählen, einen bestehenden geschützten Arbeitsbereich importieren oder ein vorhandenes Dateipaar vom NAS übernehmen. Vor der Auswahl wird kein leerer Arbeitsbereich angelegt.
-- **Sync ohne Datenverlust beim Start:** Ladeansicht mit Status und Quelle. Ist ein Netzlaufwerk nicht erreichbar, bleibt ServerDesk mit Prüfen, Wiederverbinden und Dateiauswahl geöffnet. Vor dem erfolgreichen Einlesen werden keine Ersatzdaten in den gemeinsamen Speicher geschrieben.
-- **NAS-Verwaltung:** Einstellungen zeigen Freigabe, Verbindung, Masterkey-/Speicherpfade und Überwachungsstatus. SMB-Profile bleiben auch ohne aktiven Mount sichtbar; gemeinsame Serveradressen und gerätespezifische Windows-/Mac-Pfade werden getrennt behandelt.
-- **Ruhigere Cloudverbindungen:** Nextcloud und WebDAV benötigen keine zusätzliche Keep-alive-Anfrage. Die dadurch ausgelöste 405-Fehlermeldung entfällt. Anmeldefehler führen weiterhin direkt zum passenden Konto.
-- **Nachvollziehbare Aktivitäten:** Verbindungs- und Transferfehler, Sync-Prüfungen und eingelesene Änderungen erscheinen im Aktivitätsbereich. Meldungen lassen sich einzeln oder gesammelt kopieren.
-- **Remote-Tastenkürzel:** Die fokussierte RDP-/VNC-Sitzung erhält die Tastenkombinationen. Lokale Mac-Menüaktionen werden dabei abgefangen; geschützte Systemkombinationen lassen sich über die Sitzungsaktionen senden.
-- **Textzwischenablage:** VNC in beide Richtungen, einschließlich Unicode bei unterstützter ExtendedClipboard-Erweiterung. Die Freigabe lässt sich deaktivieren und wird während der App-Sperre geschützt.
-- **RDP-Dateizwischenablage:** Windows verwendet den Microsoft-Kanal. Auf dem Mac können Dateien und Ordner gestreamt und direkt in einen ServerDesk-Dateibereich eingefügt oder in einen gewählten Zielordner geladen werden. Für VNC-Dateien steht der separate SFTP-/SMB-Weg bereit.
-- **Remote-Komponenten einrichten:** Über einen vorhandenen SSH-Verwaltungszugang prüfen und unterstützte SFTP-/RDP-Komponenten nach Masterpasswort-Freigabe und Zielbestätigung installieren. Für Geräte ohne Verwaltungszugang gibt es eine Anleitung zur Ersteinrichtung.
-- **Windows und macOS:** Installer und Updatepakete für Windows x64 sowie macOS Apple Silicon und Intel. Mac-App und Installer sind mit Developer ID signiert und von Apple notarisiert.
+- Netzlaufwerke auf dem Mac werden vor dem Entsperren und vor der Prüfung synchronisierter Workspace-Dateien verbunden. Gespeicherte macOS-Anmeldungen werden verwendet; falls nötig steht beim Öffnen die Systemanmeldung zur Verfügung.
+- Fehlende ältere Netzlaufwerk-Zuordnungen werden aus einer vorhandenen Einbindung übernommen. Bei Ausfällen bleibt die Wiederherstellungsansicht geöffnet; leere oder veraltete lokale Daten überschreiben den gemeinsamen Speicher nicht.
+- Gemeinsame SMB-/NFS-Adressen und lokale Zugriffspfade werden getrennt verwaltet. Unterordner und geänderte Mac-Einhängepunkte bleiben korrekt zugeordnet; SMB-Freigaben unter Bonjour-Namen werden anhand der aktiven Serversitzung erkannt.
+- NFS-Profile aus der Netzwerksuche übernehmen den tatsächlichen Betriebssystem-Mount auf jedem Gerät. NFS verwendet die Anmeldung des Betriebssystem-Clients.
+- Updates prüfen den verfügbaren Speicher vor Download und Neustart. Bei zu wenig Platz bleibt die App geöffnet und zeigt den Grund an.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
