@@ -10,9 +10,9 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.23/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.23/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.23/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -62,14 +62,14 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 23
+## 🆕 Aktuelles Changelog · Beta 24
 
-- Netzlaufwerke erscheinen ausschließlich unter **Speicher → Netzlaufwerke**. Profil und Betriebssystem-Einbindungen werden gemeinsam angezeigt; Bearbeiten, automatisches Verbinden und Entfernen sind im Kontextmenü und unter **Einstellungen → Speicher & Cloud** erreichbar.
-- Netzlaufwerke auf dem Mac werden vor dem Entsperren und vor der Prüfung synchronisierter Workspace-Dateien verbunden. Gespeicherte macOS-Anmeldungen werden verwendet; falls nötig steht beim Öffnen die Systemanmeldung zur Verfügung.
-- Fehlende ältere Netzlaufwerk-Zuordnungen werden aus einer vorhandenen Einbindung übernommen. Bei Ausfällen bleibt die Wiederherstellungsansicht geöffnet; leere oder veraltete lokale Daten überschreiben den gemeinsamen Speicher nicht.
-- Gemeinsame SMB-/NFS-Adressen und lokale Zugriffspfade werden getrennt verwaltet. Unterordner und geänderte Mac-Einhängepunkte bleiben korrekt zugeordnet; SMB-Freigaben unter Bonjour-Namen werden anhand der aktiven Serversitzung erkannt.
-- NFS-Profile aus der Netzwerksuche übernehmen den tatsächlichen Betriebssystem-Mount auf jedem Gerät. NFS verwendet die Anmeldung des Betriebssystem-Clients.
-- Updates prüfen den verfügbaren Speicher vor Download und Neustart. Bei zu wenig Platz bleibt die App geöffnet und zeigt den Grund an.
+- **Einstellungen → Plugins:** offizieller Katalog mit Suche, Berechtigungen, Versionswahl, Vorabversionen, Installation, Aktivierung, Entfernung, Updateprüfung und Rückwechsel.
+- **Zumbyte Remote** erscheint in Server & Computer und Remote Desktop. Mehrere Remote-Server, Geräte und Sitzungen bleiben getrennt; die Fernsteuerung läuft direkt in eigenen ServerDesk-Tabs.
+- Anmeldung über den verschlüsselten Arbeitsbereichstresor. Benutzerpasswörter werden nicht gespeichert. Kopplung, Zugriffsregeln, Geräteverwaltung, Aktivitäten, Benutzer und Serverupdates sind über ServerDesk erreichbar.
+- Eingaben gehen ausschließlich an die fokussierte, sichtbare Remote-Fläche. Fokusverlust gibt gedrückte Tasten frei; versteckte Tabs und inaktive Fenster steuern keinen Computer. Strg + Alt + Entf bleibt eine bewusste Sitzungsaktion.
+- Katalogsignatur mit festem Prüfschlüssel, Paketgröße und Prüfsumme sowie alle Archivdateien werden geprüft. Downloads verwenden direkte Release-Dateien. Updates warten auf das Schließen laufender Sitzungstabs; Fehlstarts wechseln auf die vorherige Version zurück. Profile und Tresoreinträge bleiben erhalten.
+- Native Einbettung unter Windows mit WebView2 und unter macOS mit WKWebView. Keine externe Remote-App. Bestehende Datei-, SSH-, RDP-, VNC-, Cloud- und Arbeitsbereichsfunktionen bleiben verfügbar.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
@@ -81,8 +81,20 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 | **Verbindungen** | SSH, SFTP, FTP, FTPS, HTTPS-WebDAV, SMB, RDP und VNC. Profile desselben Hosts gruppieren, Status erkennen und mehrere Verbindungen gemeinsam öffnen. |
 | **Flexible Ansicht** | Tabs herausziehen und wieder andocken, weitere App-Fenster öffnen und Sidebar sowie unteren Arbeitsbereich anpassen. Kategorien per Drag-and-drop frei anordnen – auch Datenträger, Netzlaufwerke und Cloudspeicher über den Favoriten. Reihenfolge, Einklappzustände und Fensterpositionen bleiben gespeichert. |
 | **Arbeitsbereiche** | Eigene Verbindungen und Zugangsdaten pro Arbeitsbereich, jeweils mit eigenem Masterkey und Passwort. Berufliche und private Systeme getrennt verwalten. |
-| **Remote Desktop** | RDP und VNC direkt in Verbindungstabs verwenden. Im lokalen LAN oder WLAN nach passenden Diensten suchen und gefundene Systeme als Profile übernehmen. |
+| **Remote Desktop** | RDP, VNC und Zumbyte Remote per Plugin direkt in Verbindungstabs verwenden. Im lokalen LAN oder WLAN nach passenden Diensten suchen und gefundene Systeme als Profile übernehmen. |
 | **Terminal** | Lokale PowerShell unter Windows, zsh auf dem Mac und SSH-Sitzungen mit Zwischenablage, Schriftwahl und Größen-Dropdown. Beim Schließen eines SSH-Tabs wird dessen Verbindung beendet. |
+
+### Zumbyte Remote als Plugin
+
+Öffne **Einstellungen → Plugins**, aktiviere **Vorabversionen anzeigen**, wähle **Zumbyte Remote** und installiere die gewünschte Version nach Prüfung der Berechtigungen. Unter **Verbindungen → Server & Computer → Remote-Server hinzufügen** trägst du anschließend deine Serveradresse ein und meldest dich an. Ein Remote-Computer öffnet sich in einem eigenen Tab. Über sein Kontextmenü kannst du eine weitere Sitzung öffnen oder seine Zugriffsregel verwalten.
+
+Remote-Server und Geräte nutzen die vorhandenen Hostgruppen. Die Anmeldung lässt sich im verschlüsselten Arbeitsbereichstresor speichern; Benutzerpasswörter werden nicht gespeichert. Zum Trennen einer Sitzung dient die Sitzungsleiste. Erst nach dem Schließen aller Remote-Tabs wird eine zurückgestellte Pluginversion aktiviert. Beim Entfernen des Plugins bleiben Profile und Tresoreinträge erhalten.
+
+| Pluginverwaltung · Windows | Echter Windows-Host und getrennte Sitzung · macOS |
+| --- | --- |
+| ![Installiertes Plugin im echten ServerDesk-Katalog](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/plugin-catalog.png) | ![Laufende ServerDesk-App: links echte Windows-Testfläche, rechts deutlich markierte synthetische Gegenprobe](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/plugin-sessions-macos.png) |
+
+**Geprüft am 11.11.2026:** unverändertes veröffentlichtes Zumbyte-Remote-Plugin 0.2.0-alpha.1 im endgültigen Windows- und Mac-Paket. Zusätzlich zu getrennten Protokollservern wurde ein echter Windows-Rechner über den Original-Windows-Dienst mit Bild, nativer Maus-/Tastatureingabe, Fokusverlust, verstecktem Tab, inaktivem Fenster und Sitzungsende geprüft. Drei Tabs auf zwei Servern bleiben getrennt; eine Gegenprobe ist ausdrücklich synthetisch beschriftet. Mac-App und Installer sind signiert und notarisiert; x64 wurde unter Rosetta geprüft. Die Live-Freigabe gilt für Relay über den Windows-Dienst; WebRTC zum Electron-Host ist noch nicht abgenommen. Linux ist nicht freigegeben. Windows benötigt die Microsoft Edge WebView2-Laufzeit. [Prüfumfang und Grenzen](docs/PLUGIN-VERIFICATION.md).
 
 ### Einstellungen übersichtlich finden
 
