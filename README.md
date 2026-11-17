@@ -10,9 +10,11 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.25/Zumbyte.ServerDesk-win-beta-Setup.exe) |
 | Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
 | Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+
+**Beta 25 für Windows** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.25/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md). Für macOS bleibt Beta 24 verfügbar.
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -90,11 +92,9 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 Remote-Server und Geräte nutzen die vorhandenen Hostgruppen. Die Anmeldung lässt sich im verschlüsselten Arbeitsbereichstresor speichern; Benutzerpasswörter werden nicht gespeichert. Zum Trennen einer Sitzung dient die Sitzungsleiste. Erst nach dem Schließen aller Remote-Tabs wird eine zurückgestellte Pluginversion aktiviert. Beim Entfernen des Plugins bleiben Profile und Tresoreinträge erhalten.
 
-| Pluginverwaltung · Windows | Echter Windows-Host und getrennte Sitzung · macOS |
-| --- | --- |
-| ![Installiertes Plugin im echten ServerDesk-Katalog](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/plugin-catalog.png) | ![Laufende ServerDesk-App: links echte Windows-Testfläche, rechts deutlich markierte synthetische Gegenprobe](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/plugin-sessions-macos.png) |
+![Pluginverwaltung in ServerDesk](https://raw.githubusercontent.com/ZUMBYTE-AppSolution/serverdesk-release/main/assets/screenshots/plugin-catalog.png)
 
-**Geprüft am 11.11.2026:** unverändertes veröffentlichtes Zumbyte-Remote-Plugin 0.2.0-alpha.1 im endgültigen Windows- und Mac-Paket. Zusätzlich zu getrennten Protokollservern wurde ein echter Windows-Rechner über den Original-Windows-Dienst mit Bild, nativer Maus-/Tastatureingabe, Fokusverlust, verstecktem Tab, inaktivem Fenster und Sitzungsende geprüft. Drei Tabs auf zwei Servern bleiben getrennt; eine Gegenprobe ist ausdrücklich synthetisch beschriftet. Mac-App und Installer sind signiert und notarisiert; x64 wurde unter Rosetta geprüft. Die Live-Freigabe gilt für Relay über den Windows-Dienst; WebRTC zum Electron-Host ist noch nicht abgenommen. Linux ist nicht freigegeben. Windows benötigt die Microsoft Edge WebView2-Laufzeit. [Prüfumfang und Grenzen](docs/PLUGIN-VERIFICATION.md).
+Für Windows wird die Microsoft Edge WebView2-Laufzeit benötigt.
 
 ### Einstellungen übersichtlich finden
 
@@ -177,5 +177,5 @@ Verfügbare ältere Pakete können für einen Rückwechsel ausgewählt werden, s
 
 ServerDesk ist proprietäre Software von **Zumbyte - AppSolution**. Nutzungsbedingungen und Einschränkungen stehen in der [Lizenz](LICENSE). Der Quellcode ist nicht öffentlich. Die Lizenzen mitgelieferter Komponenten findest du direkt unter **Einstellungen → Über ServerDesk → Lizenzen ansehen** und im Downloadpaket. Die Drittkomponenten erlauben kommerzielle Einbindung unter ihren jeweiligen Lizenzbedingungen.
 
-**Zumbyte - AppSolution | [www.zumbyte.de](https://www.zumbyte.de/)**  
+**Zumbyte - AppSolution | [www.zumbyte.de](https://www.zumbyte.de/)**
 © 2026 Zumbyte - AppSolution · [Datenschutz](https://www.zumbyte.de/datenschutz/) · [Impressum](https://www.zumbyte.de/impressum/)
