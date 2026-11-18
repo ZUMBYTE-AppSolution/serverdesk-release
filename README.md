@@ -10,11 +10,11 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.25/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 24](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 24](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
-**Beta 25 für Windows** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.25/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md). Für macOS bleibt Beta 24 verfügbar.
+**Beta 26 für Windows** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md). Für macOS bleibt Beta 24 verfügbar.
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
@@ -64,14 +64,16 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 24
+## 🆕 Aktuelles Changelog · Beta 26
 
-- **Einstellungen → Plugins:** offizieller Katalog mit Suche, Berechtigungen, Versionswahl, Vorabversionen, Installation, Aktivierung, Entfernung, Updateprüfung und Rückwechsel.
-- **Zumbyte Remote** erscheint in Server & Computer und Remote Desktop. Mehrere Remote-Server, Geräte und Sitzungen bleiben getrennt; die Fernsteuerung läuft direkt in eigenen ServerDesk-Tabs.
-- Anmeldung über den verschlüsselten Arbeitsbereichstresor. Benutzerpasswörter werden nicht gespeichert. Kopplung, Zugriffsregeln, Geräteverwaltung, Aktivitäten, Benutzer und Serverupdates sind über ServerDesk erreichbar.
-- Eingaben gehen ausschließlich an die fokussierte, sichtbare Remote-Fläche. Fokusverlust gibt gedrückte Tasten frei; versteckte Tabs und inaktive Fenster steuern keinen Computer. Strg + Alt + Entf bleibt eine bewusste Sitzungsaktion.
-- Katalogsignatur mit festem Prüfschlüssel, Paketgröße und Prüfsumme sowie alle Archivdateien werden geprüft. Downloads verwenden direkte Release-Dateien. Updates warten auf das Schließen laufender Sitzungstabs; Fehlstarts wechseln auf die vorherige Version zurück. Profile und Tresoreinträge bleiben erhalten.
-- Native Einbettung unter Windows mit WebView2 und unter macOS mit WKWebView. Keine externe Remote-App. Bestehende Datei-, SSH-, RDP-, VNC-, Cloud- und Arbeitsbereichsfunktionen bleiben verfügbar.
+- zRemote-Verbindungen öffnen sich auch in separaten Fenstern mit funktionierender Maus- und Tastatursteuerung.
+- Die Bildschirmauflösung des entfernten Computers kann sich an Fenstergröße und Vollbild anpassen.
+- Nach einem Verbindungsabbruch oder fehlgeschlagenem Aufbau versucht zRemote mit einem sichtbaren Countdown erneut zu verbinden.
+- Die einklappbare Steuerleiste lässt sich bündig am oberen oder unteren Rand anpinnen.
+- Vollbild nutzt die gesamte Remote-Fläche. Beim Verlassen kehrt die laufende Verbindung in ihren bisherigen Tab oder ihr bisheriges Fenster zurück.
+- Windows und macOS erhalten signierte Installer. Verbindungen und verschlüsselte Arbeitsbereiche bleiben erhalten.
+
+Für die neuen Remote-Funktionen das zRemote-Plugin auf 0.3.0 Alpha 5 und die zRemote-App auf dem Zielcomputer auf 0.3.0 Alpha 3 aktualisieren.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
@@ -157,13 +159,13 @@ Die Tresorverschlüsselung schützt **Verbindungen und Zugangsdaten**. Herunterg
 ## 📦 Installation und erster Start
 
 1. Die gewünschte Ausgabe unter [Releases](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases) herunterladen.
-2. **Installer:** `Setup.exe` ausführen. **Portabel:** `Portable.zip` vollständig entpacken und `Zumbyte - ServerDesk.exe` im Hauptordner starten.
+2. **Installer:** `Setup.exe` ausführen. **Portabel:** `Portable.zip` vollständig entpacken und unter Windows `Zumbyte - ServerDesk.exe` im Hauptordner starten. **Mac:** Den passenden PKG-Installer öffnen oder die App aus dem Portable-Paket nach „Programme“ kopieren.
 3. Ein Masterpasswort mit mindestens zwölf Zeichen für deinen Arbeitsbereich festlegen.
 4. Links und rechts Verzeichnisse öffnen, Verbindungsprofile anlegen und deine Ansicht einrichten.
 
 Die benötigten Laufzeiten sind enthalten. Für die Nutzung brauchst du keine Entwicklungswerkzeuge. Die Einstellungen bleiben im jeweiligen Benutzerprofil. Verschlüsselte Arbeitsbereiche lassen sich zwischen Windows und Mac übernehmen.
 
-**Aktueller Stand:** Windows 10/11 x64 und macOS 14 oder neuer, Beta. Mac-Ausgaben ab Beta 12 sind mit Developer ID signiert und Apple-notarisiert. Windows-Pakete sind derzeit unsigniert. `SHA256SUMS.txt` enthält die Prüfsummen aller Downloads. Die Kompatibilität externer Server, Cloudkonten und Anmeldeverfahren hängt vom jeweiligen Anbieter ab. [Versionshinweise und bekannte Einschränkungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
+**Aktueller Stand:** Windows 10/11 x64 und macOS 14 oder neuer, Beta. Mac-Ausgaben ab Beta 12 sind mit Developer ID signiert und Apple-notarisiert. Windows-Pakete sind ab Beta 25 digital signiert; verifizierter Herausgeber ist Andreas Zumbansen. `SHA256SUMS.txt` enthält die Prüfsummen aller Downloads. Die Kompatibilität externer Server, Cloudkonten und Anmeldeverfahren hängt vom jeweiligen Anbieter ab. [Versionshinweise und bekannte Einschränkungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Beta-Grenzen).
 
 ## 🔄 Updates und Versionswahl
 
