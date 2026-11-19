@@ -1,5 +1,14 @@
 # Änderungen
 
+## 0.2.0 Beta 27 · 19. November 2026
+
+- Das neue zRemote-Plugin kann Chat-Dateien direkt übertragen und empfangene Dateien über „Speichern …“ ablegen.
+- Links aus dem Verbindungschat öffnen sich im Browser.
+- Zusätzliche Zugriffe auf Dateien und Zwischenablage werden beim Pluginupdate angezeigt und bleiben auf die zugehörige Verbindung beschränkt.
+- Windows- und Mac-Pakete sind signiert. Die Mac-App und die Installer sind von Apple notarisiert. Arbeitsbereiche, gespeicherte Verbindungen und Tresor bleiben erhalten.
+
+Für diese Funktionen werden das zRemote-Plugin Alpha 8 und aktuelle zRemote-Geräte samt Remote-Server benötigt.
+
 ## 0.2.0 Beta 26 · 19. November 2026
 
 - zRemote-Verbindungen versuchen nach einem Abbruch oder einem fehlgeschlagenen Aufbau automatisch erneut zu verbinden. Ein Countdown zeigt den nächsten Versuch.

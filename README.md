@@ -10,13 +10,17 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 26](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 26](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 27](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 27](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
-**Beta 26 für Windows und macOS** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. Die Mac-Pakete sind mit Developer ID signiert und von Apple notarisiert. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md).
+**Beta 27 für Windows und macOS** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. Die Mac-Pakete sind mit Developer ID signiert und von Apple notarisiert. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md).
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
+
+## Neu in Beta 27
+
+Mit dem neuen zRemote-Plugin stehen dir Chat, anklickbare Links und Dateianhänge mit Fortschritt zur Verfügung. Empfangene Dateien kannst du gezielt speichern. Beim Pluginupdate werden die zusätzlichen Zugriffe auf Dateien und Zwischenablage angezeigt. Bitte auch das zRemote-Plugin, den Remote-Server und das Zielgerät auf Alpha 8 aktualisieren.
 
 ## 🖼️ Einblicke
 
@@ -64,16 +68,15 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 26
+## 🆕 Aktuelles Changelog · Beta 27
 
-- zRemote-Verbindungen öffnen sich auch in separaten Fenstern mit funktionierender Maus- und Tastatursteuerung.
-- Die Bildschirmauflösung des entfernten Computers kann sich an Fenstergröße und Vollbild anpassen.
-- Nach einem Verbindungsabbruch oder fehlgeschlagenem Aufbau versucht zRemote mit einem sichtbaren Countdown erneut zu verbinden.
-- Die einklappbare Steuerleiste lässt sich bündig am oberen oder unteren Rand anpinnen.
-- Vollbild nutzt die gesamte Remote-Fläche. Beim Verlassen kehrt die laufende Verbindung in ihren bisherigen Tab oder ihr bisheriges Fenster zurück.
+- Mit dem zRemote-Plugin während der Verbindung chatten: eigene und empfangene Nachrichten in unterschiedlichen Sprechblasen.
+- Links aus dem Chat im Browser öffnen.
+- Dateien mit Fortschritt senden und empfangene Anhänge gezielt speichern.
+- Zusätzliche Zugriffe auf Dateien und Zwischenablage beim Pluginupdate prüfen.
 - Windows und macOS erhalten signierte Installer. Verbindungen und verschlüsselte Arbeitsbereiche bleiben erhalten.
 
-Für die neuen Remote-Funktionen das zRemote-Plugin auf 0.3.0 Alpha 5 und die zRemote-App auf dem Zielcomputer auf 0.3.0 Alpha 3 aktualisieren.
+Für die neuen Chat-Funktionen das zRemote-Plugin, den Remote-Server und die zRemote-App auf dem Zielcomputer auf **0.3.0 Alpha 8** aktualisieren.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
