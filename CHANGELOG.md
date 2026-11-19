@@ -9,7 +9,7 @@
 - Maus und Tastatur funktionieren auch nach dem Verschieben einer zRemote-Verbindung in ein separates Fenster.
 - Windows-App, Hilfsprogramme und Installer sind digital signiert. Arbeitsbereiche, gespeicherte Verbindungen und Tresor bleiben erhalten.
 
-Diese Ausgabe aktualisiert Windows. Für macOS bleibt Beta 24 verfügbar.
+Diese Ausgabe ist für Windows sowie für Macs mit Apple Silicon und Intel erhältlich. Mac-App und Installer sind mit Developer ID signiert und von Apple notarisiert.
 
 ## 0.2.0 Beta 25 · 17. November 2026
 

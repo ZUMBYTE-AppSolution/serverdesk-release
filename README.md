@@ -11,10 +11,10 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 | Dein Rechner | Passender Installer |
 | --- | --- |
 | Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 24](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 24](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.24/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 26](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 26](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
-**Beta 26 für Windows** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md). Für macOS bleibt Beta 24 verfügbar.
+**Beta 26 für Windows und macOS** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. Die Mac-Pakete sind mit Developer ID signiert und von Apple notarisiert. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.26/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md).
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
