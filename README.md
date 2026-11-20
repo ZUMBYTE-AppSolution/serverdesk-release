@@ -20,7 +20,7 @@ Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Appl
 
 ## Neu in Beta 28
 
-Mit zRemote verbindest du Computer jetzt über eine feste neunstellige ID und ein Einmal- oder Dauerpasswort. Ein eigener Server und ein Konto sind dafür optional. Unter **Verbindungen → Mit zRemote-ID verbinden** stehen auch deine eigene ID und die Zugriffseinstellungen. Bitte das zRemote-Plugin auf **Alpha 9** aktualisieren.
+Mit zRemote verbindest du Computer jetzt über eine feste neunstellige ID und ein Einmal- oder Dauerpasswort. Ein eigener Server und ein Konto sind dafür optional. Unter **Verbindungen → Mit zRemote-ID verbinden** stehen auch deine eigene ID und die Zugriffseinstellungen. Bitte das zRemote-Plugin auf **Alpha 10** aktualisieren.
 
 ## 🖼️ Einblicke
 
@@ -76,7 +76,7 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 - Freigegebene Rechte gelten auch im separaten Verbindungsfenster. Im Präsentationsmodus ist nur die Bewegung des Mauszeigers erlaubt.
 - Direkte Sitzungen enden nach 90 Minuten.
 
-Für diese Funktionen **ServerDesk Beta 28**, das **zRemote-Plugin Alpha 9** und eine aktuelle zRemote-App auf dem Zielcomputer verwenden. Windows- und Mac-Pakete sind digital signiert; die Mac-Pakete sind von Apple notarisiert.
+Für diese Funktionen **ServerDesk Beta 28**, das **zRemote-Plugin Alpha 10** und eine aktuelle zRemote-App auf dem Zielcomputer verwenden. Windows- und Mac-Pakete sind digital signiert; die Mac-Pakete sind von Apple notarisiert.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
@@ -93,7 +93,7 @@ Für diese Funktionen **ServerDesk Beta 28**, das **zRemote-Plugin Alpha 9** und
 
 ### Zumbyte Remote als Plugin
 
-Öffne **Einstellungen → Plugins**, aktiviere **Vorabversionen anzeigen** und installiere **zRemote Alpha 9** nach Prüfung der Berechtigungen. Unter **Verbindungen → Mit zRemote-ID verbinden** gibst du die ID oder den Verbindungsnamen und das Passwort der Gegenstelle ein. Ein Remote-Computer öffnet sich in einem eigenen Tab und lässt sich auch in ein separates Fenster verschieben. Wer einen eigenen Remote-Server verwendet, kann weiterhin ein Serverprofil hinzufügen.
+Öffne **Einstellungen → Plugins**, aktiviere **Vorabversionen anzeigen** und installiere **zRemote Alpha 10** nach Prüfung der Berechtigungen. Unter **Verbindungen → Mit zRemote-ID verbinden** gibst du die ID oder den Verbindungsnamen und das Passwort der Gegenstelle ein. Ein Remote-Computer öffnet sich in einem eigenen Tab und lässt sich auch in ein separates Fenster verschieben. Wer einen eigenen Remote-Server verwendet, kann weiterhin ein Serverprofil hinzufügen.
 
 Remote-Server und Geräte nutzen die vorhandenen Hostgruppen. Die Anmeldung lässt sich im verschlüsselten Arbeitsbereichstresor speichern; Benutzerpasswörter werden nicht gespeichert. Zum Trennen einer Sitzung dient die Sitzungsleiste. Erst nach dem Schließen aller Remote-Tabs wird eine zurückgestellte Pluginversion aktiviert. Beim Entfernen des Plugins bleiben Profile und Tresoreinträge erhalten.
 
