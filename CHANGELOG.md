@@ -1,5 +1,18 @@
 # Änderungen
 
+## 0.2.0 Beta 28 · 20. November 2026
+
+Computer mit zRemote direkt über ID und Einmal- oder Dauerpasswort verbinden. Ein eigener Server und ein Konto sind dafür optional.
+
+- Eigene ID, Einmalpasswort und Zugriffseinstellungen in ServerDesk verwalten.
+- Dauerhaft erlaubte Gegenstellen mit eigenen Rechten speichern und später ändern.
+- Freigaben auch im separaten Verbindungsfenster beachten. Der Präsentationsmodus erlaubt nur die Bewegung des Mauszeigers.
+- Direkte Sitzungen nach 90 Minuten beenden.
+
+Bitte das **zRemote-Plugin auf Alpha 9** und die zRemote-App auf dem Zielcomputer aktualisieren. Gespeicherte Verbindungen und Zugänge bleiben erhalten.
+
+Für Windows x64 und macOS ab Version 14 auf Apple Silicon und Intel. Die Windows-Downloads sind digital signiert. Die Mac-Pakete sind mit Developer ID signiert und von Apple notarisiert.
+
 ## 0.2.0 Beta 27 · 19. November 2026
 
 - Das neue zRemote-Plugin kann Chat-Dateien direkt übertragen und empfangene Dateien über „Speichern …“ ablegen.

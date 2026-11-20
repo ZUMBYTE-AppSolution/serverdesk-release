@@ -10,17 +10,17 @@ Erhältlich als **Windows-x64-Beta** und für **macOS ab Version 14** auf Apple 
 
 | Dein Rechner | Passender Installer |
 | --- | --- |
-| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-win-beta-Setup.exe) |
-| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 27](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
-| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 27](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
+| Windows 10 / 11, x64 | [Windows-Installer](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.28/Zumbyte.ServerDesk-win-beta-Setup.exe) |
+| Mac mit Apple-Chip (M1 und neuer) | [macOS Apple Silicon · arm64 · Beta 28](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.28/Zumbyte.ServerDesk-osx-arm64-beta-Setup.pkg) |
+| Mac mit Intel-Prozessor | [macOS Intel · x64 · Beta 28](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.28/Zumbyte.ServerDesk-osx-x64-beta-Setup.pkg) |
 
-**Beta 27 für Windows und macOS** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. Die Mac-Pakete sind mit Developer ID signiert und von Apple notarisiert. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.27/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md).
+**Beta 28 für Windows und macOS** ist digital signiert. Windows zeigt **Andreas Zumbansen** als verifizierten Herausgeber an. Die Mac-Pakete sind mit Developer ID signiert und von Apple notarisiert. [Portable Windows-Ausgabe](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases/download/v0.2.0-beta.28/Zumbyte.ServerDesk-win-beta-Portable.zip) · [Änderungen](CHANGELOG.md).
 
 Ab **Beta 12** sind Mac-App und Installer mit Developer ID signiert und von Apple notarisiert. Die Prüftickets sind den Downloads beigefügt. [Installation und Paketwahl](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/wiki/Installation#macos).
 
-## Neu in Beta 27
+## Neu in Beta 28
 
-Mit dem neuen zRemote-Plugin stehen dir Chat, anklickbare Links und Dateianhänge mit Fortschritt zur Verfügung. Empfangene Dateien kannst du gezielt speichern. Beim Pluginupdate werden die zusätzlichen Zugriffe auf Dateien und Zwischenablage angezeigt. Bitte auch das zRemote-Plugin, den Remote-Server und das Zielgerät auf Alpha 8 aktualisieren.
+Mit zRemote verbindest du Computer jetzt über eine feste neunstellige ID und ein Einmal- oder Dauerpasswort. Ein eigener Server und ein Konto sind dafür optional. Unter **Verbindungen → Mit zRemote-ID verbinden** stehen auch deine eigene ID und die Zugriffseinstellungen. Bitte das zRemote-Plugin auf **Alpha 9** aktualisieren.
 
 ## 🖼️ Einblicke
 
@@ -68,15 +68,15 @@ Die Screenshots zeigen ServerDesk mit Beispieldaten. Klicke auf ein Bild für di
 
 </details>
 
-## 🆕 Aktuelles Changelog · Beta 27
+## 🆕 Aktuelles Changelog · Beta 28
 
-- Mit dem zRemote-Plugin während der Verbindung chatten: eigene und empfangene Nachrichten in unterschiedlichen Sprechblasen.
-- Links aus dem Chat im Browser öffnen.
-- Dateien mit Fortschritt senden und empfangene Anhänge gezielt speichern.
-- Zusätzliche Zugriffe auf Dateien und Zwischenablage beim Pluginupdate prüfen.
-- Windows und macOS erhalten signierte Installer. Verbindungen und verschlüsselte Arbeitsbereiche bleiben erhalten.
+- Mit zRemote per ID und Passwort verbinden, ohne Registrierung und ohne eigenen Remote-Server.
+- Eigene ID, Einmalpasswort und Zugriffseinstellungen direkt in ServerDesk verwalten.
+- Dauerhaft erlaubte Gegenstellen und deren Rechte später ändern oder entfernen.
+- Freigegebene Rechte gelten auch im separaten Verbindungsfenster. Im Präsentationsmodus ist nur die Bewegung des Mauszeigers erlaubt.
+- Direkte Sitzungen enden nach 90 Minuten.
 
-Für die neuen Chat-Funktionen das zRemote-Plugin, den Remote-Server und die zRemote-App auf dem Zielcomputer auf **0.3.0 Alpha 8** aktualisieren.
+Für diese Funktionen **ServerDesk Beta 28**, das **zRemote-Plugin Alpha 9** und eine aktuelle zRemote-App auf dem Zielcomputer verwenden. Windows- und Mac-Pakete sind digital signiert; die Mac-Pakete sind von Apple notarisiert.
 
 [Alle Versionen und frühere Änderungen](https://github.com/ZUMBYTE-AppSolution/serverdesk-release/releases).
 
@@ -93,7 +93,7 @@ Für die neuen Chat-Funktionen das zRemote-Plugin, den Remote-Server und die zRe
 
 ### Zumbyte Remote als Plugin
 
-Öffne **Einstellungen → Plugins**, aktiviere **Vorabversionen anzeigen**, wähle **Zumbyte Remote** und installiere die gewünschte Version nach Prüfung der Berechtigungen. Unter **Verbindungen → Server & Computer → Remote-Server hinzufügen** trägst du anschließend deine Serveradresse ein und meldest dich an. Ein Remote-Computer öffnet sich in einem eigenen Tab. Über sein Kontextmenü kannst du eine weitere Sitzung öffnen oder seine Zugriffsregel verwalten.
+Öffne **Einstellungen → Plugins**, aktiviere **Vorabversionen anzeigen** und installiere **zRemote Alpha 9** nach Prüfung der Berechtigungen. Unter **Verbindungen → Mit zRemote-ID verbinden** gibst du die ID oder den Verbindungsnamen und das Passwort der Gegenstelle ein. Ein Remote-Computer öffnet sich in einem eigenen Tab und lässt sich auch in ein separates Fenster verschieben. Wer einen eigenen Remote-Server verwendet, kann weiterhin ein Serverprofil hinzufügen.
 
 Remote-Server und Geräte nutzen die vorhandenen Hostgruppen. Die Anmeldung lässt sich im verschlüsselten Arbeitsbereichstresor speichern; Benutzerpasswörter werden nicht gespeichert. Zum Trennen einer Sitzung dient die Sitzungsleiste. Erst nach dem Schließen aller Remote-Tabs wird eine zurückgestellte Pluginversion aktiviert. Beim Entfernen des Plugins bleiben Profile und Tresoreinträge erhalten.
 
